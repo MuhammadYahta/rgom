@@ -4,7 +4,7 @@ Reference Generalized Ontological Model is a Smart Manufacturing ontology that p
 
 # NameSpaces Used
 
-@prefix smo: <http://www.semanticweb.org/manufacturingproductionline#> .
+@prefix smo: <http://www.semanticweb.org/manufacturingproductionline#> ._
 @prefix dc: <http://purl.org/dc/elements/1.1#> .
 @prefix tm: <http://www.w3.org/2006/time#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
