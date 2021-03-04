@@ -5,18 +5,20 @@ Reference Generalized Ontological Model is a Smart Manufacturing ontology that p
 ![Alt text](https://github.com/MuhammadYahta/Smart-Manufacturing-Ontology/blob/main/SMO.owl.svg?sanitize=true)
 <img src="https://github.com/MuhammadYahta/Smart-Manufacturing-Ontology/blob/main/SMO.owl.svg?sanitize=true">
 
-# NameSpaces Used
+# Accessibility
 
-@prefix smo: <http://www.semanticweb.org/manufacturingproductionline#> . \
-@prefix dc: <http://purl.org/dc/elements/1.1#> . \
-@prefix tm: <http://www.w3.org/2006/time#> . \
-@prefix owl: <http://www.w3.org/2002/07/owl#> . \
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . \
-@prefix ssn: <http://purl.oclc.org/NET/ssnx/ssn#> . \
-@prefix xml: <http://www.w3.org/XML/1998/namespace> . \
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . \
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . \
-@prefix sosa: <http://www.w3.org/ns/sosa#> . 
+Preferred prefix identifier: smo Vocabulary namespace: http://www.semanticweb.org/manufacturingproductionline#
+
+@prefix smo: http://www.semanticweb.org/manufacturingproductionline# . \
+@prefix dc: http://purl.org/dc/elements/1.1# . \
+@prefix tm: http://www.w3.org/2006/time# . \
+@prefix owl: http://www.w3.org/2002/07/owl# . \
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# . \
+@prefix ssn: http://purl.oclc.org/NET/ssnx/ssn# . \
+@prefix xml: http://www.w3.org/XML/1998/namespace . \
+@prefix xsd: http://www.w3.org/2001/XMLSchema# . \
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# . \
+@prefix sosa: http://www.w3.org/ns/sosa# . 
 
 # References
 Giustozzi, F., Saunier, J. and Zanni-Merk, C., 2018. Context modeling for industry 4.0: An ontology-based proposal. Procedia Computer Science, 126, pp.675-684.
