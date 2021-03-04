@@ -16,4 +16,7 @@ Reference Generalized Ontological Model is a Smart Manufacturing ontology that p
 @prefix xml: <http://www.w3.org/XML/1998/namespace> . \
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> . \
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . \
-@prefix sosa: <http://www.w3.org/ns/sosa#> . \
+@prefix sosa: <http://www.w3.org/ns/sosa#> . 
+
+# References
+Giustozzi, F., Saunier, J. and Zanni-Merk, C., 2018. Context modeling for industry 4.0: An ontology-based proposal. Procedia Computer Science, 126, pp.675-684.
