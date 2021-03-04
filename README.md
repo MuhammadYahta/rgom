@@ -5,9 +5,7 @@ Reference Generalized Ontological Model is a Smart Manufacturing ontology that p
 ![Alt text](https://github.com/MuhammadYahta/Smart-Manufacturing-Ontology/blob/main/SMO.owl.svg?sanitize=true)
 <img src="https://github.com/MuhammadYahta/Smart-Manufacturing-Ontology/blob/main/SMO.owl.svg?sanitize=true">
 
-# Accessibility
-
-Preferred prefix identifier: smo Vocabulary namespace: http://www.semanticweb.org/manufacturingproductionline#
+# Vocbulary namespaces used
 
 @prefix smo: http://www.semanticweb.org/manufacturingproductionline# . \
 @prefix dc: http://purl.org/dc/elements/1.1# . \
