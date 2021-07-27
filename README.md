@@ -19,4 +19,4 @@ Reference Generalized Ontological Model is a Smart Manufacturing ontology that p
 @prefix sosa: http://www.w3.org/ns/sosa# . 
 
 # References
-Giustozzi, F., Saunier, J. and Zanni-Merk, C., 2018. Context modeling for industry 4.0: An ontology-based proposal. Procedia Computer Science, 126, pp.675-684.
+Yahya, Muhammad, John G. Breslin, and Muhammad Intizar Ali. "Semantic Web and Knowledge Graphs for Industry 4.0." Applied Sciences 11, no. 11 (2021): 5110.
