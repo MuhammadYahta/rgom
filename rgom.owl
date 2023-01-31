@@ -528,7 +528,6 @@
     <!-- https://w3id.org/rgom#isPerformedBy -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isPerformedBy">
-        <owl:inverseOf rdf:resource="https://w3id.org/rgom#performsProcess"/>
         <rdfs:domain rdf:resource="https://w3id.org/rgom#Process"/>
         <rdfs:range rdf:resource="https://w3id.org/rgom#Machine"/>
     </owl:ObjectProperty>
