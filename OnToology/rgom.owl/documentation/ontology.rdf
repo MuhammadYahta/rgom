@@ -1,0 +1,2480 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/rgom#"
+     xml:base="https://w3id.org/rgom"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:elements="http://purl.org/dc/elements/1.1#">
+    <owl:Ontology rdf:about="https://w3id.org/rgom#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1#isPartOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1#isPartOf">
+        <rdfs:range rdf:resource="https://w3id.org/rgom#ManufacturingFacility"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Machine"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasTime -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#hasTime">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Time"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa#madeBySensor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa#madeBySensor">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/sosa#madeObservation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa#madeObservation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa#madeObservation">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#Hardness -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#Hardness">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Resource"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Capability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#ProcessHasMotorSpeed -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#ProcessHasMotorSpeed">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasSpeed"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Speed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#collectProductFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#collectProductFrom">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Supplier"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#StorageHall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#consumesPower -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#consumesPower">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#AssemblingMachine"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#ProcessingMachine"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Power"/>
+        <rdfs:comment xml:lang="en">Machine and tool both consumes power. They have different consumption value.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#contains -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#contains">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Line"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#WorkStation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#deliverProductTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#deliverProductTo">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Supplier"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#drives -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#drives">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Motor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Conveyor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#happensIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#happensIn">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasCapability -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasCapability"/>
+    
+
+
+    <!-- https://w3id.org/rgom#hasColor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasColor">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Product"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Color"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasConveyorOperation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasConveyorOperation">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#HandlingSystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#ConvyerOperation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasDevicePressure -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasDevicePressure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasPressure"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#AssemblingMachine"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#ProcessingMachine"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Pressure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasFrequency -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasFrequency">
+        <rdfs:domain rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Frequency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasHardness -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasHardness">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Squeegee"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Hardness"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasHumanCapability -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasHumanCapability">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasCapability"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Staff"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Capability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasInputMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasInputMaterial">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasLaserSpeed -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasLaserSpeed">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasSpeed"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Tool"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Speed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasLocation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasLocation">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Customer"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMachine -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasMachine">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#WorkStation"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Machine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMaterialTemp -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasMaterialTemp">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Material"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMotor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasMotor">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Motor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMotorDirection -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasMotorDirection">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Motor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#MotorDirection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMotorSpeed -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasMotorSpeed">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasSpeed"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Motor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Speed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMotorState -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasMotorState">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Motor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMotorTemp -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasMotorTemp">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Motor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasObject -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasObject">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Situation"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasOperatingHours -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasOperatingHours">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#WorkStation"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#OperatingHours"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasOrder -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasOrder">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Customer"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasOutput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasOutput">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasPressure -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasPressure"/>
+    
+
+
+    <!-- https://w3id.org/rgom#hasProcess -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Situation"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasProcessPressure -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasProcessPressure">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasPressure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasProduct -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasProduct">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Order"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasSensor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasSensor">
+        <rdfs:domain rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasService -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasService">
+        <owl:inverseOf rdf:resource="https://w3id.org/rgom#isGivenTo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Product"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasSpeed -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasSpeed"/>
+    
+
+
+    <!-- https://w3id.org/rgom#hasStorageLocation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasStorageLocation">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#StorageHall"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasSubProcess -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasSubProcess">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasTemperature -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasTemperature">
+        <rdfs:domain rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasTool -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasTool">
+        <rdfs:domain rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Actuator"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#BallShappingDie"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Bed"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Conveyor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#FormingMoldDie"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#GlueSprayingNeedle"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Heater"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#HighFrequencyDie"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#LaserDie"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Motor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#PressureSensor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Squeegee"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#TemperatureSensor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#VibrationSensor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#ViscositySensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasToolCapability -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasToolCapability">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasCapability"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Resource"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Capability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasUnit -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasUnit">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasViscosity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasViscosity">
+        <rdfs:domain rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasWorkstationState -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hasWorkstationState">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#WorkStation"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hostSensor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#hostSensor">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Tool"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#PressureSensor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#TemperatureSensor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#VibrationSensor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#ViscositySensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isBasedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isBasedIn">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Supplier"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isComposedOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isComposedOf">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Part"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isFeedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isFeedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Conveyor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Feeder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isGivenTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isGivenTo">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Service"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isInLocation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isInLocation">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Resource"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isOperatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isOperatedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/rgom#operatesProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isPerformedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isPerformedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Machine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isPerformedOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isPerformedOn">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#ManufacturingProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isPlacedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isPlacedIn">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Product"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#StorageHall"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isPlacedOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isPlacedOn">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Bed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isProducedOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isProducedOn">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Product"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Machine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isRotatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isRotatedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Bed"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Motor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isTransferedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isTransferedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Conveyor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isTransferredFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#isTransferredFrom">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Material"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Pallet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#locatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#locatedIn">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Sensor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#operatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#operatedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/rgom#operates"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#ManufacturingFacility"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#operates -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#operates">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Staff"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#ManufacturingFacility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#operatesProcess -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#operatesProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Staff"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#operationPerformedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#operationPerformedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/rgom#performsOperation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Maintenance"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#orderHasProcess -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#orderHasProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Order"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#performsOperation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#performsOperation">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Staff"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Maintenance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#performsProcess -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#performsProcess">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#printsColor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#printsColor">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Squeegee"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Color"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#processConsumesPower -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#processConsumesPower">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#AssemblingProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#ManufacturingProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Power"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#processHasMotorState -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#processHasMotorState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#AssemblingProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#ManufacturingProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#MotorState"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#processHasPressureObservation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#processHasPressureObservation">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#AssemblingProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#ManufacturingProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Pressure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#processHasTemperatureObservation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#processHasTemperatureObservation">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#AssemblingProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#ManufacturingProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Temperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#processMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#processMaterial">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#produce -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#produce">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#AssemblingProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#ManufacturingProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#requireService -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#requireService">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Order"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Service"/>
+        <rdfs:comment>Maintanince or other service is required by customer to old product</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#requires -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#requires">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Product"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#useTool -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/rgom#useTool">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#AssemblingProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#ManufacturingProcess"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Actuator"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#BallShappingDie"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Bed"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Conveyor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#FormingMoldDie"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#GlueSprayingNeedle"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Heater"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#HighFrequencyDie"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#LaserDie"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Motor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#PressureSensor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#Squeegee"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#TemperatureSensor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#VibrationSensor"/>
+        <rdfs:range rdf:resource="https://w3id.org/rgom#ViscositySensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasFinishTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#hasFinishTime">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Time"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasStartTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#hasStartTime">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Time"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa#hasSimpleResult -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/sosa#hasSimpleResult">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasCapabilityValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasCapabilityValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#HumanCapability"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasColorName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasColorName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasCompletionDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasCompletionDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasDate"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasConveyorID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasConveyorID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasID"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#HandlingSystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasCustomerID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasCustomerID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasID"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasCustomerName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasCustomerName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasName"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasDate"/>
+    
+
+
+    <!-- https://w3id.org/rgom#hasDeliveryDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasDeliveryDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasDate"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasDiameter -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasDiameter">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Tool"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasDirection -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasDirection">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#MotorDirection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasFeederID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasFeederID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasID"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Feeder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasFeederVolume -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasFeederVolume">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Feeder"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasFrequencyValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasFrequencyValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Frequency"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasFunction -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasFunction">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasHardnessValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasHardnessValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#ToolCapability"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasID"/>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMState -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasMState">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasState"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#MotorState"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMachineID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasMachineID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasID"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMachineModel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasMachineModel">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasModel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMachineName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasMachineName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasName"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMaterialName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasMaterialName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasName"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Material"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasModel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasModel"/>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMotorID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasMotorID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasID"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Motor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasMotorModel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasMotorModel">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasModel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Motor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasName"/>
+    
+
+
+    <!-- https://w3id.org/rgom#hasObservedProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasObservedProperty">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasOrderStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasOrderStatus">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasPlacementDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasPlacementDate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasDate"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasPowerValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasPowerValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Power"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasPressureSensorId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasPressureSensorId">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasID"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Pressure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasPressureSensorModel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasPressureSensorModel">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasSensorModel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Pressure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasProcessID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasProcessID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasID"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#ManufacturingProcess"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasProcessName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasProcessName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasName"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasProductID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasProductID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasID"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasProductName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasProductName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasName"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasSensorModel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasSensorModel"/>
+    
+
+
+    <!-- https://w3id.org/rgom#hasSpeedValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasSpeedValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Speed"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasSprayedAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasSprayedAmount">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#GlueSprayingNeedle"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasSprayedGlueAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasSprayedGlueAmount">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#GlueSprayingNeedle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasStaffID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasStaffID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasID"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasStaffName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasStaffName">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasName"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasState -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasState"/>
+    
+
+
+    <!-- https://w3id.org/rgom#hasStrokeTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasStrokeTime">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Die"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasTemperatureSensorId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasTemperatureSensorId">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasID"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Temperature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasTemperatureSensorModel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasTemperatureSensorModel">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasSensorModel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Temperature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasValue"/>
+    
+
+
+    <!-- https://w3id.org/rgom#hasVibrationSensorId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasVibrationSensorId">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasID"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Vibration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasVibrationSensorModel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasVibrationSensorModel">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasSensorModel"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#Vibration"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasViscositySensorID -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasViscositySensorID">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasID"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#hasWState -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#hasWState">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/rgom#hasState"/>
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#WorkStationState"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/rgom#isInDirection -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/rgom#isInDirection">
+        <rdfs:domain rdf:resource="https://w3id.org/rgom#MotorDirection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Device -->
+
+
+    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Device">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Resource"/>
+        <rdfs:comment xml:lang="en">A thing made or adapted for a particular purpose, especially a piece of mechanical or electronic equipment.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Time -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Time">
+        <rdfs:comment xml:lang="en">Time is the indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past, through the present, into the future. It is a component quantity of various measurements used to sequence events, to compare the duration of events or the intervals between them, and to quantify rates of change of quantities in material reality or in the conscious experience.</rdfs:comment>
+        <rdfs:label xml:lang="en">Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa#Observation -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa#Observation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#PhysicalQuantity"/>
+        <rdfs:comment xml:lang="en">An Observation is a Situation in which a Sensing method has been used to estimate or calculate a value of a Property.</rdfs:comment>
+        <rdfs:label xml:lang="en">Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Actuator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Actuator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Tool"/>
+        <rdfs:comment xml:lang="en">An actuator is a component of a machine that is responsible for moving and controlling a mechanism or system, for example by opening a valve. In simple terms, it is a &quot;mover&quot;. An actuator requires a control signal and a source of energy.</rdfs:comment>
+        <rdfs:label xml:lang="en">Actuator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#AssemblingMachine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#AssemblingMachine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:comment xml:lang="en">A machine combining the semi finished product into finished one.</rdfs:comment>
+        <rdfs:label xml:lang="en">AssemblyMachine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#AssemblingProcess -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#AssemblingProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:comment xml:lang="en">Assemling process is a series of activities performed by assembly machine.</rdfs:comment>
+        <rdfs:label xml:lang="en">AssemblingProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#BallShappingDie -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#BallShappingDie">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Die"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Bar -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Bar">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Unit"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/rgom#DegreeCelsius"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/rgom#DegreeFahrenheit"/>
+        <rdfs:comment xml:lang="en">Pressure Unit</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Bed -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Bed">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#HandlingSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Capability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Capability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#PhysicalQuantity"/>
+        <rdfs:comment xml:lang="en">A capability is the ability to perform or achieve certain actions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Capability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#CartoonPacking -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#CartoonPacking">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Packing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Cell -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Cell">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ManufacturingFacility"/>
+        <rdfs:comment xml:lang="en">Cells are sets of machines that are grouped by the products or parts that they produce. This type of system is used in the cellular manufacturing concept and is distinct from the traditional functional manufacturing system, which groups all similar machines together.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Color -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Color">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ProductData"/>
+        <rdfs:label xml:lang="en">Color</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Component -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Component">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Part"/>
+        <rdfs:label xml:lang="en">Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Container -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Container">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Resource"/>
+        <rdfs:comment xml:lang="en">A container is any receptacle or enclosure for holding a product used in storage, packaging, and shipping.</rdfs:comment>
+        <rdfs:label xml:lang="en">Container</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#ContextualData -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#ContextualData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Parameter"/>
+        <rdfs:comment xml:lang="en">Contextual data is the background information that provides a broader understanding of an event, person, or item.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contextual Data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Conveyor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Conveyor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#HandlingSystem"/>
+        <rdfs:comment xml:lang="en">A conveyor mechanism that transports material, good or products across a horizontal or inclined plane over a short to medium distance.</rdfs:comment>
+        <rdfs:label xml:lang="en">Conveyor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#ConvyerOperation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#ConvyerOperation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Handling"/>
+        <rdfs:comment xml:lang="en">An operation performed by the conveyer in order to transfer a material or product.</rdfs:comment>
+        <rdfs:label xml:lang="en">ConveyorOperation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Customer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Customer">
+        <rdfs:comment xml:lang="en">In sales, commerce and economics, a customer (sometimes known as a client, buyer, or purchaser) is the recipient of a good, service, product or an idea - obtained from a seller, vendor, or supplier via a financial transaction or exchange for money or some other valuable consideration.</rdfs:comment>
+        <rdfs:label xml:lang="en">Customer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#DegreeCelsius -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#DegreeCelsius">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Unit"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/rgom#Pascal"/>
+        <rdfs:comment xml:lang="en">Temperature Unit</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#DegreeFahrenheit -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#DegreeFahrenheit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Unit"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/rgom#Pascal"/>
+        <rdfs:comment xml:lang="en">Temperature Unit</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Die -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Die">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Direction -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Direction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#PhysicalQuantity"/>
+        <rdfs:label xml:lang="en">Direction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Feeder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Feeder">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ManufacturingFacility"/>
+        <rdfs:comment xml:lang="en">Feeder adds materials, or ingredients to a machine or equipment during the manufacturing process.</rdfs:comment>
+        <rdfs:label xml:lang="en">Feeder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#FeederOperation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#FeederOperation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Handling"/>
+        <rdfs:comment xml:lang="en">An activity of adding a material to converyor or machine.</rdfs:comment>
+        <rdfs:label xml:lang="en">FeederOperation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#FormingMoldDie -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#FormingMoldDie">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Die"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Frequency -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Frequency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#GlueCleaning -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#GlueCleaning">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#HumanCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#GlueSprayingNeedle -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#GlueSprayingNeedle">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Handling -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Handling">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#LogisticProcess"/>
+        <rdfs:comment xml:lang="en">Handling involves short-distance movement within the confines of a location.</rdfs:comment>
+        <rdfs:label xml:lang="en">Handling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#HandlingSystem -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#HandlingSystem">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Tool"/>
+        <rdfs:comment xml:lang="en">A mechanical equipment used for the movement and control of materials, goods and products throughout the process of manufacturing.</rdfs:comment>
+        <rdfs:label xml:lang="en">HandlingSystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Hardness -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Hardness">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Heater -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Heater">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#HighFrequencyDie -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#HighFrequencyDie">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Die"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#HumanCapability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#HumanCapability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#HumanOperation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#HumanOperation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:label xml:lang="en">HumanOperation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#LaserDie -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#LaserDie">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Die"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Line -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Line">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ManufacturingFacility"/>
+        <rdfs:comment xml:lang="en">It is the arrangement of work centers in a way, so that the product is moved sequentially along the line and stops at work centers along the line where an operation is performed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Line</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Location -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Location">
+        <rdfs:comment xml:lang="en">In geography, location and place are used to denote a point or an area on the Earth&apos;s surface or elsewhere. The term location generally implies a higher degree of certainty than place, the latter often indicating an entity with an ambiguous boundary, relying more on human or social attributes of place identity and sense of place than on geometry.</rdfs:comment>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#LogisticProcess -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#LogisticProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:label xml:lang="en">LogisticProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Machine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Machine">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+        <rdfs:comment xml:lang="en">A machine (or mechanical device) is a mechanical structure that uses power to apply forces and control movement to perform an intended action. Machines can be driven by animals and people, by natural forces such as wind and water, and by chemical, thermal, or electrical power, and include a system of mechanisms that shape the actuator input to achieve a specific application of output forces and movement.</rdfs:comment>
+        <rdfs:label xml:lang="en">Machine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Maintenance -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Maintenance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#HumanOperation"/>
+        <rdfs:comment xml:lang="en">An operation performed by human to maintain a machine.</rdfs:comment>
+        <rdfs:label xml:lang="en">Maintenance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#MaintenanceTechnician -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#MaintenanceTechnician">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Staff"/>
+        <rdfs:comment xml:lang="en">A person who is responsible for reparing or manintenace of the machine or resources in the factory plant.</rdfs:comment>
+        <rdfs:label xml:lang="en">Maintenance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Manager -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Manager">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Staff"/>
+        <rdfs:label xml:lang="en">Manager</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#ManualProcess -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#ManualProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#HumanOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#ManufacturingFacility -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#ManufacturingFacility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Resource"/>
+        <rdfs:comment xml:lang="en">Any resource contributing in the production of goods in the manufacturing produciton line.</rdfs:comment>
+        <rdfs:label xml:lang="en">ManufacturingFacility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#ManufacturingProcess -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#ManufacturingProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Process"/>
+        <rdfs:comment xml:lang="en">A series of operations or activities performed by Processing Machine.</rdfs:comment>
+        <rdfs:label xml:lang="en">ManufacturingProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#MatchPanels -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#MatchPanels">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#HumanCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Material -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Material">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Resource"/>
+        <rdfs:comment xml:lang="en">The basic material from which the product is made.</rdfs:comment>
+        <rdfs:label xml:lang="en">Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Motor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Motor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Tool"/>
+        <rdfs:comment xml:lang="en">An equipment that operate continously in one direction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Motor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#MotorDirection -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#MotorDirection">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Direction"/>
+        <rdfs:label xml:lang="en">MotorDirection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#MotorState -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#MotorState">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#State"/>
+        <rdfs:comment xml:lang="en">The state of the motor can be idle, running or faulty.</rdfs:comment>
+        <rdfs:label xml:lang="en">MotorState</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#OperatingHours -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#OperatingHours">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Parameter"/>
+        <rdfs:comment xml:lang="en">Operating hours are scheduled by the production planning. It represents the time during which the manufacturing produciton line is maintained running to manufacture products.</rdfs:comment>
+        <rdfs:label xml:lang="en">OperatingHours</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Operator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Operator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Staff"/>
+        <rdfs:comment xml:lang="en">A person who is operates the machinary in the production line.</rdfs:comment>
+        <rdfs:label xml:lang="en">Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Order -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Order">
+        <rdfs:comment xml:lang="en">In business or commerce, an order is a stated intention, either spoken or written, to engage in a commercial transaction for specific products or services. From a buyer&apos;s point of view it expresses the intention to buy and is called a purchase order. From a seller&apos;s point of view it expresses the intention to sell and is referred to as a sales order. When the purchase order of the buyer and the sales order of the seller agree, the orders become a contract between the buyer and seller.</rdfs:comment>
+        <rdfs:label xml:lang="en">Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Packing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Packing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#HumanCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Pallet -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Pallet">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Container"/>
+        <rdfs:comment xml:lang="en">A pallet () (also called a skid) is a flat transport structure, which supports goods in a stable fashion while being lifted by a forklift, a pallet jack, a front loader, a jacking device, or an erect crane. A pallet is the structural foundation of a unit load which allows handling and storage efficiencies. Goods or shipping containers are often placed on a pallet secured with strapping, stretch wrap or shrink wrap and shipped.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pallet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Parameter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Parameter">
+        <rdfs:comment xml:lang="en">A parameter is an element of a system that is useful, or critical, when identifying the system, or when evaluating its performance, status, condition, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Part -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Part">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Product"/>
+        <rdfs:comment>The raw material being processed becomes a part.</rdfs:comment>
+        <rdfs:label xml:lang="en">Part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Pascal -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Pascal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Unit"/>
+        <rdfs:comment xml:lang="en">Pressure Unit</rdfs:comment>
+        <rdfs:label xml:lang="en">Pascal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#PhysicalQuantity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#PhysicalQuantity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Parameter"/>
+        <rdfs:comment xml:lang="en">A physical quantity is a property of a system that can be quantified by measurement. A physical quantity can be expressed as the combination of a numerical value and a unit.</rdfs:comment>
+        <rdfs:label xml:lang="en">PhysicalQuantity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#PluckTheCutPanels -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#PluckTheCutPanels">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#HumanCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#PolybagsPacking -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#PolybagsPacking">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Packing"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Power -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Power">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#PhysicalQuantity"/>
+        <rdfs:comment xml:lang="en">Source of energy consumed by devices to perform a task.</rdfs:comment>
+        <rdfs:label xml:lang="en">Power</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Pressure -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Pressure">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+        <rdfs:comment xml:lang="en">Pressure is the force applied perpendicular to the surface of an object per unit area over which that force is distributed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pressure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#PressureSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#PressureSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Sensor"/>
+        <rdfs:comment xml:lang="en">A  sensor designated to observe the pressure of a device.</rdfs:comment>
+        <rdfs:label xml:lang="en">PressureSensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Process -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Process">
+        <rdfs:comment xml:lang="en">A process is series or set of activities that interact to produce a result.</rdfs:comment>
+        <rdfs:label xml:lang="en">Process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#ProcessingMachine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#ProcessingMachine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Machine"/>
+        <rdfs:comment xml:lang="en">A machine that perfroms a process  in which a piece of raw material is cut into a desired final shape and size by a controlled material-removal process. The processes that have this common theme, controlled material removal, are today collectively known as subtractive manufacturing, in distinction from processes of controlled material addition, which are known as additive manufacturing.</rdfs:comment>
+        <rdfs:label xml:lang="en">ProcessingMachine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Product -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Product">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Resource"/>
+        <rdfs:comment xml:lang="en">In marketing, a product is an object or system made available for consumer use; it is anything that can be offered to a market to satisfy the desire or need of a customer. In retailing, products are often referred to as merchandise, and in manufacturing, products are bought as raw materials and then sold as finished goods.</rdfs:comment>
+        <rdfs:label xml:lang="en">Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#ProductData -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#ProductData">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Parameter"/>
+        <rdfs:label xml:lang="en">ProductData</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Resource -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Resource">
+        <rdfs:comment xml:lang="en">A source or supply from which a benefit is produced and that has some utility.</rdfs:comment>
+        <rdfs:label xml:lang="en">Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Rotation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Rotation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ToolCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Sensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Sensor">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+        <rdfs:comment xml:lang="en">A sensor is a device, module, machine, or subsystem whose purpose is to detect events or changes in its environment and send the information to other electronics, frequently a computer processor. A sensor is always used with other electronics.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Service -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Service">
+        <rdfs:comment xml:lang="en">A value delivered to repair the fault or error occured in the purchased product.</rdfs:comment>
+        <rdfs:label xml:lang="en">Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Sit-Assessment -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Sit-Assessment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Situation"/>
+        <rdfs:label xml:lang="en">SituationAssesment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Sit-Classification -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Sit-Classification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Situation"/>
+        <rdfs:label xml:lang="en">SituationClassification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Sit-Diagnosis -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Sit-Diagnosis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Situation"/>
+        <rdfs:label xml:lang="en">SituationDiagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Sit-Monitoring -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Sit-Monitoring">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Situation"/>
+        <rdfs:comment xml:lang="en">To constantly checek the resources during the production line for abnormal behavior.</rdfs:comment>
+        <rdfs:label xml:lang="en">SituationMonitoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Sit-Prediction -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Sit-Prediction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Situation"/>
+        <rdfs:label xml:lang="en">SituationPrediciton</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Situation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Situation">
+        <rdfs:comment xml:lang="en">Situation is the way something is positioned as compared to its surroundings, or the status of the circumstances, or the combination of circumstances at a specific point in time.</rdfs:comment>
+        <rdfs:label xml:lang="en">Situation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Speed -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Speed">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ToolCapability"/>
+        <rdfs:comment xml:lang="en">In everyday use and in kinematics, the speed of an object is the magnitude of the change of its position; it is thus a scalar quantity. The average speed of an object in an interval of time is the distance travelled by the object divided by the duration of the interval; the instantaneous speed is the limit of the average speed as the duration of the time interval approaches zero.</rdfs:comment>
+        <rdfs:label xml:lang="en">Speed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Squeegee -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Squeegee">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Staff -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Staff">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Resource"/>
+        <rdfs:comment xml:lang="en">Person who is responsible for working in a manufacuritng production line or industry.</rdfs:comment>
+        <rdfs:label xml:lang="en">Staff</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#StainRemoving -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#StainRemoving">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#HumanCapability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#State -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#State">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ContextualData"/>
+        <rdfs:comment xml:lang="en">State represent the staus, condition or situation of an item or entity. The state of an item or entity can be running, woking, idle or faulty.</rdfs:comment>
+        <rdfs:label xml:lang="en">State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#StorageHall -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#StorageHall">
+        <rdfs:comment xml:lang="en">A storeroom in a factory where odds and ends can be stored.</rdfs:comment>
+        <rdfs:label xml:lang="en">StorageHall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Supplier -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Supplier">
+        <rdfs:comment xml:lang="en">A person or organization that provides something needed such as a product.</rdfs:comment>
+        <rdfs:label xml:lang="en">Supplier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Temperature -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+        <rdfs:comment xml:lang="en">Temperature is a physical property of device that quantitatively expresses hot and cold.</rdfs:comment>
+        <rdfs:label xml:lang="en">Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#TemperatureSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Sensor"/>
+        <rdfs:comment xml:lang="en">A  sensor designated to observe the temperature of a device.</rdfs:comment>
+        <rdfs:label xml:lang="en">TemperatureSensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Tool -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Tool">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Device"/>
+        <rdfs:comment xml:lang="en">A tool is an object used to extend the ability of a machine to its modify features.</rdfs:comment>
+        <rdfs:label xml:lang="en">Tool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#ToolCapability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#ToolCapability">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Transfer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Transfer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ConvyerOperation"/>
+        <rdfs:comment xml:lang="en">The operation of transfering a material or product from one place to another.</rdfs:comment>
+        <rdfs:label xml:lang="en">Transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Unit -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Unit">
+        <rdfs:comment xml:lang="en">A unit is a definite magnitude of a quantity, defined and adopted by convention or by law, that is used as a standard for measurement of the same kind of quantity.</rdfs:comment>
+        <rdfs:label xml:lang="en">UnitOfMeasurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Vibration -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Vibration">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+        <rdfs:comment xml:lang="en">Vibration in motorized equipment is the back-and-forth movement, or oscillation, of machines and components, such as drive motors, driven devices (pumps, compressors and so on), and the bearings, shafts, gears, belts and other elements that make up mechanical systems.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vibration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#VibrationSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#VibrationSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#Viscosity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#Viscosity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa#Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#ViscositySensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#ViscositySensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#WorkStation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#WorkStation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#ManufacturingFacility"/>
+        <rdfs:comment xml:lang="en">Workstations are small integrated physical groupings of machines.</rdfs:comment>
+        <rdfs:label xml:lang="en">Workstation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/rgom#WorkStationState -->
+
+
+    <owl:Class rdf:about="https://w3id.org/rgom#WorkStationState">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/rgom#State"/>
+        <rdfs:comment xml:lang="en">The state of the workstation can be idle, working or faulty.</rdfs:comment>
+        <rdfs:label xml:lang="en">WorkstationState</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
