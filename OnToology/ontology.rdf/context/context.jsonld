@@ -1,0 +1,833 @@
+{
+  "@context" : {
+    "hasMotorState" : {
+      "@id" : "https://w3id.org/rgom#hasMotorState",
+      "@type" : "@id"
+    },
+    "operatesProcess" : {
+      "@id" : "https://w3id.org/rgom#operatesProcess",
+      "@type" : "@id"
+    },
+    "hasSpeed" : {
+      "@id" : "https://w3id.org/rgom#hasSpeed",
+      "@type" : "@id"
+    },
+    "hasMotorID" : {
+      "@id" : "https://w3id.org/rgom#hasMotorID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "MotorState" : {
+      "@id" : "https://w3id.org/rgom#MotorState"
+    },
+    "HandlingSystem" : {
+      "@id" : "https://w3id.org/rgom#HandlingSystem"
+    },
+    "Situation" : {
+      "@id" : "https://w3id.org/rgom#Situation"
+    },
+    "isOperatedBy" : {
+      "@id" : "https://w3id.org/rgom#isOperatedBy",
+      "@type" : "@id"
+    },
+    "isInDirection" : {
+      "@id" : "https://w3id.org/rgom#isInDirection",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasProcessPressure" : {
+      "@id" : "https://w3id.org/rgom#hasProcessPressure",
+      "@type" : "@id"
+    },
+    "Order" : {
+      "@id" : "https://w3id.org/rgom#Order"
+    },
+    "Unit" : {
+      "@id" : "https://w3id.org/rgom#Unit"
+    },
+    "Viscosity" : {
+      "@id" : "https://w3id.org/rgom#Viscosity"
+    },
+    "WorkStationState" : {
+      "@id" : "https://w3id.org/rgom#WorkStationState"
+    },
+    "MotorDirection" : {
+      "@id" : "https://w3id.org/rgom#MotorDirection"
+    },
+    "hasDevicePressure" : {
+      "@id" : "https://w3id.org/rgom#hasDevicePressure",
+      "@type" : "@id"
+    },
+    "processConsumesPower" : {
+      "@id" : "https://w3id.org/rgom#processConsumesPower",
+      "@type" : "@id"
+    },
+    "hasCustomerID" : {
+      "@id" : "https://w3id.org/rgom#hasCustomerID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Line" : {
+      "@id" : "https://w3id.org/rgom#Line"
+    },
+    "hasToolCapability" : {
+      "@id" : "https://w3id.org/rgom#hasToolCapability",
+      "@type" : "@id"
+    },
+    "isBasedIn" : {
+      "@id" : "https://w3id.org/rgom#isBasedIn",
+      "@type" : "@id"
+    },
+    "hasColorName" : {
+      "@id" : "https://w3id.org/rgom#hasColorName"
+    },
+    "isPerformedOn" : {
+      "@id" : "https://w3id.org/rgom#isPerformedOn",
+      "@type" : "@id"
+    },
+    "Direction" : {
+      "@id" : "https://w3id.org/rgom#Direction"
+    },
+    "hasHardness" : {
+      "@id" : "https://w3id.org/rgom#hasHardness",
+      "@type" : "@id"
+    },
+    "hasModel" : {
+      "@id" : "https://w3id.org/rgom#hasModel"
+    },
+    "hasMachine" : {
+      "@id" : "https://w3id.org/rgom#hasMachine",
+      "@type" : "@id"
+    },
+    "hasObject" : {
+      "@id" : "https://w3id.org/rgom#hasObject",
+      "@type" : "@id"
+    },
+    "hasCustomerName" : {
+      "@id" : "https://w3id.org/rgom#hasCustomerName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ProcessingMachine" : {
+      "@id" : "https://w3id.org/rgom#ProcessingMachine"
+    },
+    "operates" : {
+      "@id" : "https://w3id.org/rgom#operates",
+      "@type" : "@id"
+    },
+    "Material" : {
+      "@id" : "https://w3id.org/rgom#Material"
+    },
+    "HighFrequencyDie" : {
+      "@id" : "https://w3id.org/rgom#HighFrequencyDie"
+    },
+    "LaserDie" : {
+      "@id" : "https://w3id.org/rgom#LaserDie"
+    },
+    "PressureSensor" : {
+      "@id" : "https://w3id.org/rgom#PressureSensor"
+    },
+    "StainRemoving" : {
+      "@id" : "https://w3id.org/rgom#StainRemoving"
+    },
+    "hasPlacementDate" : {
+      "@id" : "https://w3id.org/rgom#hasPlacementDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Sit-Monitoring" : {
+      "@id" : "https://w3id.org/rgom#Sit-Monitoring"
+    },
+    "drives" : {
+      "@id" : "https://w3id.org/rgom#drives",
+      "@type" : "@id"
+    },
+    "Tool" : {
+      "@id" : "https://w3id.org/rgom#Tool"
+    },
+    "Handling" : {
+      "@id" : "https://w3id.org/rgom#Handling"
+    },
+    "Feeder" : {
+      "@id" : "https://w3id.org/rgom#Feeder"
+    },
+    "Product" : {
+      "@id" : "https://w3id.org/rgom#Product"
+    },
+    "hasFrequency" : {
+      "@id" : "https://w3id.org/rgom#hasFrequency",
+      "@type" : "@id"
+    },
+    "ProductData" : {
+      "@id" : "https://w3id.org/rgom#ProductData"
+    },
+    "hasName" : {
+      "@id" : "https://w3id.org/rgom#hasName"
+    },
+    "DegreeFahrenheit" : {
+      "@id" : "https://w3id.org/rgom#DegreeFahrenheit"
+    },
+    "hasOutput" : {
+      "@id" : "https://w3id.org/rgom#hasOutput",
+      "@type" : "@id"
+    },
+    "hasID" : {
+      "@id" : "https://w3id.org/rgom#hasID"
+    },
+    "deliverProductTo" : {
+      "@id" : "https://w3id.org/rgom#deliverProductTo",
+      "@type" : "@id"
+    },
+    "hasMotorDirection" : {
+      "@id" : "https://w3id.org/rgom#hasMotorDirection",
+      "@type" : "@id"
+    },
+    "Die" : {
+      "@id" : "https://w3id.org/rgom#Die"
+    },
+    "hasValue" : {
+      "@id" : "https://w3id.org/rgom#hasValue"
+    },
+    "Speed" : {
+      "@id" : "https://w3id.org/rgom#Speed"
+    },
+    "useTool" : {
+      "@id" : "https://w3id.org/rgom#useTool",
+      "@type" : "@id"
+    },
+    "PluckTheCutPanels" : {
+      "@id" : "https://w3id.org/rgom#PluckTheCutPanels"
+    },
+    "Customer" : {
+      "@id" : "https://w3id.org/rgom#Customer"
+    },
+    "hasStaffID" : {
+      "@id" : "https://w3id.org/rgom#hasStaffID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Pascal" : {
+      "@id" : "https://w3id.org/rgom#Pascal"
+    },
+    "Sit-Assessment" : {
+      "@id" : "https://w3id.org/rgom#Sit-Assessment"
+    },
+    "madeBySensor" : {
+      "@id" : "http://www.w3.org/ns/sosa#madeBySensor",
+      "@type" : "@id"
+    },
+    "hasInputMaterial" : {
+      "@id" : "https://w3id.org/rgom#hasInputMaterial",
+      "@type" : "@id"
+    },
+    "hasProductID" : {
+      "@id" : "https://w3id.org/rgom#hasProductID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasConveyorOperation" : {
+      "@id" : "https://w3id.org/rgom#hasConveyorOperation",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasFinishTime" : {
+      "@id" : "http://www.w3.org/2006/time#hasFinishTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "contains" : {
+      "@id" : "https://w3id.org/rgom#contains",
+      "@type" : "@id"
+    },
+    "ContextualData" : {
+      "@id" : "https://w3id.org/rgom#ContextualData"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/elements/1.1#isPartOf"
+    },
+    "processHasTemperatureObservation" : {
+      "@id" : "https://w3id.org/rgom#processHasTemperatureObservation",
+      "@type" : "@id"
+    },
+    "hasStartTime" : {
+      "@id" : "http://www.w3.org/2006/time#hasStartTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasWorkstationState" : {
+      "@id" : "https://w3id.org/rgom#hasWorkstationState",
+      "@type" : "@id"
+    },
+    "Location" : {
+      "@id" : "https://w3id.org/rgom#Location"
+    },
+    "hasColor" : {
+      "@id" : "https://w3id.org/rgom#hasColor",
+      "@type" : "@id"
+    },
+    "hasViscositySensorID" : {
+      "@id" : "https://w3id.org/rgom#hasViscositySensorID"
+    },
+    "isPlacedOn" : {
+      "@id" : "https://w3id.org/rgom#isPlacedOn",
+      "@type" : "@id"
+    },
+    "hasStorageLocation" : {
+      "@id" : "https://w3id.org/rgom#hasStorageLocation",
+      "@type" : "@id"
+    },
+    "hasSprayedAmount" : {
+      "@id" : "https://w3id.org/rgom#hasSprayedAmount"
+    },
+    "hasMachineName" : {
+      "@id" : "https://w3id.org/rgom#hasMachineName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMState" : {
+      "@id" : "https://w3id.org/rgom#hasMState",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "operatedBy" : {
+      "@id" : "https://w3id.org/rgom#operatedBy",
+      "@type" : "@id"
+    },
+    "hasOrderStatus" : {
+      "@id" : "https://w3id.org/rgom#hasOrderStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasVibrationSensorModel" : {
+      "@id" : "https://w3id.org/rgom#hasVibrationSensorModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Temperature" : {
+      "@id" : "https://w3id.org/rgom#Temperature"
+    },
+    "Packing" : {
+      "@id" : "https://w3id.org/rgom#Packing"
+    },
+    "Vibration" : {
+      "@id" : "https://w3id.org/rgom#Vibration"
+    },
+    "Hardness" : {
+      "@id" : "https://w3id.org/rgom#Hardness",
+      "@type" : "@id"
+    },
+    "ManufacturingFacility" : {
+      "@id" : "https://w3id.org/rgom#ManufacturingFacility"
+    },
+    "hasFrequencyValue" : {
+      "@id" : "https://w3id.org/rgom#hasFrequencyValue"
+    },
+    "hasPressureSensorModel" : {
+      "@id" : "https://w3id.org/rgom#hasPressureSensorModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "HumanOperation" : {
+      "@id" : "https://w3id.org/rgom#HumanOperation"
+    },
+    "hasMaterialTemp" : {
+      "@id" : "https://w3id.org/rgom#hasMaterialTemp",
+      "@type" : "@id"
+    },
+    "hasMaterialName" : {
+      "@id" : "https://w3id.org/rgom#hasMaterialName"
+    },
+    "isGivenTo" : {
+      "@id" : "https://w3id.org/rgom#isGivenTo",
+      "@type" : "@id"
+    },
+    "hasDate" : {
+      "@id" : "https://w3id.org/rgom#hasDate"
+    },
+    "PhysicalQuantity" : {
+      "@id" : "https://w3id.org/rgom#PhysicalQuantity"
+    },
+    "hasProductName" : {
+      "@id" : "https://w3id.org/rgom#hasProductName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ManufacturingProcess" : {
+      "@id" : "https://w3id.org/rgom#ManufacturingProcess"
+    },
+    "hasPressure" : {
+      "@id" : "https://w3id.org/rgom#hasPressure",
+      "@type" : "@id"
+    },
+    "GlueCleaning" : {
+      "@id" : "https://w3id.org/rgom#GlueCleaning"
+    },
+    "printsColor" : {
+      "@id" : "https://w3id.org/rgom#printsColor",
+      "@type" : "@id"
+    },
+    "hasDeliveryDate" : {
+      "@id" : "https://w3id.org/rgom#hasDeliveryDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "processMaterial" : {
+      "@id" : "https://w3id.org/rgom#processMaterial",
+      "@type" : "@id"
+    },
+    "MatchPanels" : {
+      "@id" : "https://w3id.org/rgom#MatchPanels"
+    },
+    "hasPowerValue" : {
+      "@id" : "https://w3id.org/rgom#hasPowerValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasProcess" : {
+      "@id" : "https://w3id.org/rgom#hasProcess",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "hasTime" : {
+      "@id" : "http://www.w3.org/2006/time#hasTime",
+      "@type" : "@id"
+    },
+    "hasProduct" : {
+      "@id" : "https://w3id.org/rgom#hasProduct",
+      "@type" : "@id"
+    },
+    "Supplier" : {
+      "@id" : "https://w3id.org/rgom#Supplier"
+    },
+    "hasService" : {
+      "@id" : "https://w3id.org/rgom#hasService",
+      "@type" : "@id"
+    },
+    "BallShappingDie" : {
+      "@id" : "https://w3id.org/rgom#BallShappingDie"
+    },
+    "Capability" : {
+      "@id" : "https://w3id.org/rgom#Capability"
+    },
+    "Motor" : {
+      "@id" : "https://w3id.org/rgom#Motor"
+    },
+    "Rotation" : {
+      "@id" : "https://w3id.org/rgom#Rotation"
+    },
+    "Sit-Classification" : {
+      "@id" : "https://w3id.org/rgom#Sit-Classification"
+    },
+    "performsOperation" : {
+      "@id" : "https://w3id.org/rgom#performsOperation",
+      "@type" : "@id"
+    },
+    "hasMotorModel" : {
+      "@id" : "https://w3id.org/rgom#hasMotorModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "requireService" : {
+      "@id" : "https://w3id.org/rgom#requireService",
+      "@type" : "@id"
+    },
+    "hasSpeedValue" : {
+      "@id" : "https://w3id.org/rgom#hasSpeedValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "OperatingHours" : {
+      "@id" : "https://w3id.org/rgom#OperatingHours"
+    },
+    "hasConveyorID" : {
+      "@id" : "https://w3id.org/rgom#hasConveyorID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isPerformedBy" : {
+      "@id" : "https://w3id.org/rgom#isPerformedBy",
+      "@type" : "@id"
+    },
+    "hasStrokeTime" : {
+      "@id" : "https://w3id.org/rgom#hasStrokeTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "isProducedOn" : {
+      "@id" : "https://w3id.org/rgom#isProducedOn",
+      "@type" : "@id"
+    },
+    "Pallet" : {
+      "@id" : "https://w3id.org/rgom#Pallet"
+    },
+    "AssemblingMachine" : {
+      "@id" : "https://w3id.org/rgom#AssemblingMachine"
+    },
+    "Container" : {
+      "@id" : "https://w3id.org/rgom#Container"
+    },
+    "GlueSprayingNeedle" : {
+      "@id" : "https://w3id.org/rgom#GlueSprayingNeedle"
+    },
+    "ManualProcess" : {
+      "@id" : "https://w3id.org/rgom#ManualProcess"
+    },
+    "isInLocation" : {
+      "@id" : "https://w3id.org/rgom#isInLocation",
+      "@type" : "@id"
+    },
+    "operationPerformedBy" : {
+      "@id" : "https://w3id.org/rgom#operationPerformedBy",
+      "@type" : "@id"
+    },
+    "isPlacedIn" : {
+      "@id" : "https://w3id.org/rgom#isPlacedIn",
+      "@type" : "@id"
+    },
+    "Pressure" : {
+      "@id" : "https://w3id.org/rgom#Pressure"
+    },
+    "hasCapability" : {
+      "@id" : "https://w3id.org/rgom#hasCapability",
+      "@type" : "@id"
+    },
+    "happensIn" : {
+      "@id" : "https://w3id.org/rgom#happensIn",
+      "@type" : "@id"
+    },
+    "hasSubProcess" : {
+      "@id" : "https://w3id.org/rgom#hasSubProcess",
+      "@type" : "@id"
+    },
+    "Sit-Diagnosis" : {
+      "@id" : "https://w3id.org/rgom#Sit-Diagnosis"
+    },
+    "DegreeCelsius" : {
+      "@id" : "https://w3id.org/rgom#DegreeCelsius"
+    },
+    "hasCompletionDate" : {
+      "@id" : "https://w3id.org/rgom#hasCompletionDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "Conveyor" : {
+      "@id" : "https://w3id.org/rgom#Conveyor"
+    },
+    "LogisticProcess" : {
+      "@id" : "https://w3id.org/rgom#LogisticProcess"
+    },
+    "CartoonPacking" : {
+      "@id" : "https://w3id.org/rgom#CartoonPacking"
+    },
+    "FormingMoldDie" : {
+      "@id" : "https://w3id.org/rgom#FormingMoldDie"
+    },
+    "hasDiameter" : {
+      "@id" : "https://w3id.org/rgom#hasDiameter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasProcessName" : {
+      "@id" : "https://w3id.org/rgom#hasProcessName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasSensor" : {
+      "@id" : "https://w3id.org/rgom#hasSensor",
+      "@type" : "@id"
+    },
+    "consumesPower" : {
+      "@id" : "https://w3id.org/rgom#consumesPower",
+      "@type" : "@id"
+    },
+    "hasTemperatureSensorId" : {
+      "@id" : "https://w3id.org/rgom#hasTemperatureSensorId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "HumanCapability" : {
+      "@id" : "https://w3id.org/rgom#HumanCapability"
+    },
+    "Parameter" : {
+      "@id" : "https://w3id.org/rgom#Parameter"
+    },
+    "VibrationSensor" : {
+      "@id" : "https://w3id.org/rgom#VibrationSensor"
+    },
+    "Part" : {
+      "@id" : "https://w3id.org/rgom#Part"
+    },
+    "hasOrder" : {
+      "@id" : "https://w3id.org/rgom#hasOrder",
+      "@type" : "@id"
+    },
+    "collectProductFrom" : {
+      "@id" : "https://w3id.org/rgom#collectProductFrom",
+      "@type" : "@id"
+    },
+    "hasObservedProperty" : {
+      "@id" : "https://w3id.org/rgom#hasObservedProperty",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasCapabilityValue" : {
+      "@id" : "https://w3id.org/rgom#hasCapabilityValue"
+    },
+    "hasMachineModel" : {
+      "@id" : "https://w3id.org/rgom#hasMachineModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "MaintenanceTechnician" : {
+      "@id" : "https://w3id.org/rgom#MaintenanceTechnician"
+    },
+    "ToolCapability" : {
+      "@id" : "https://w3id.org/rgom#ToolCapability"
+    },
+    "hasMotorTemp" : {
+      "@id" : "https://w3id.org/rgom#hasMotorTemp",
+      "@type" : "@id"
+    },
+    "Bed" : {
+      "@id" : "https://w3id.org/rgom#Bed"
+    },
+    "hasDirection" : {
+      "@id" : "https://w3id.org/rgom#hasDirection",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasFunction" : {
+      "@id" : "https://w3id.org/rgom#hasFunction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "produce" : {
+      "@id" : "https://w3id.org/rgom#produce",
+      "@type" : "@id"
+    },
+    "Staff" : {
+      "@id" : "https://w3id.org/rgom#Staff"
+    },
+    "hasViscosity" : {
+      "@id" : "https://w3id.org/rgom#hasViscosity",
+      "@type" : "@id"
+    },
+    "TemperatureSensor" : {
+      "@id" : "https://w3id.org/rgom#TemperatureSensor"
+    },
+    "hasPressureSensorId" : {
+      "@id" : "https://w3id.org/rgom#hasPressureSensorId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasFeederID" : {
+      "@id" : "https://w3id.org/rgom#hasFeederID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMotor" : {
+      "@id" : "https://w3id.org/rgom#hasMotor",
+      "@type" : "@id"
+    },
+    "Operator" : {
+      "@id" : "https://w3id.org/rgom#Operator"
+    },
+    "ViscositySensor" : {
+      "@id" : "https://w3id.org/rgom#ViscositySensor"
+    },
+    "hostSensor" : {
+      "@id" : "https://w3id.org/rgom#hostSensor",
+      "@type" : "@id"
+    },
+    "hasSensorModel" : {
+      "@id" : "https://w3id.org/rgom#hasSensorModel"
+    },
+    "Frequency" : {
+      "@id" : "https://w3id.org/rgom#Frequency"
+    },
+    "hasVibrationSensorId" : {
+      "@id" : "https://w3id.org/rgom#hasVibrationSensorId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasStaffName" : {
+      "@id" : "https://w3id.org/rgom#hasStaffName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasUnit" : {
+      "@id" : "https://w3id.org/rgom#hasUnit",
+      "@type" : "@id"
+    },
+    "madeObservation" : {
+      "@id" : "http://www.w3.org/ns/sosa#madeObservation",
+      "@type" : "@id"
+    },
+    "locatedIn" : {
+      "@id" : "https://w3id.org/rgom#locatedIn",
+      "@type" : "@id"
+    },
+    "hasTemperatureSensorModel" : {
+      "@id" : "https://w3id.org/rgom#hasTemperatureSensorModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Component" : {
+      "@id" : "https://w3id.org/rgom#Component"
+    },
+    "hasWState" : {
+      "@id" : "https://w3id.org/rgom#hasWState",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Cell" : {
+      "@id" : "https://w3id.org/rgom#Cell"
+    },
+    "processHasPressureObservation" : {
+      "@id" : "https://w3id.org/rgom#processHasPressureObservation",
+      "@type" : "@id"
+    },
+    "hasState" : {
+      "@id" : "https://w3id.org/rgom#hasState"
+    },
+    "Process" : {
+      "@id" : "https://w3id.org/rgom#Process"
+    },
+    "hasTool" : {
+      "@id" : "https://w3id.org/rgom#hasTool",
+      "@type" : "@id"
+    },
+    "hasProcessID" : {
+      "@id" : "https://w3id.org/rgom#hasProcessID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "State" : {
+      "@id" : "https://w3id.org/rgom#State"
+    },
+    "Resource" : {
+      "@id" : "https://w3id.org/rgom#Resource"
+    },
+    "hasSprayedGlueAmount" : {
+      "@id" : "https://w3id.org/rgom#hasSprayedGlueAmount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AssemblingProcess" : {
+      "@id" : "https://w3id.org/rgom#AssemblingProcess"
+    },
+    "hasLaserSpeed" : {
+      "@id" : "https://w3id.org/rgom#hasLaserSpeed",
+      "@type" : "@id"
+    },
+    "isComposedOf" : {
+      "@id" : "https://w3id.org/rgom#isComposedOf",
+      "@type" : "@id"
+    },
+    "StorageHall" : {
+      "@id" : "https://w3id.org/rgom#StorageHall"
+    },
+    "Actuator" : {
+      "@id" : "https://w3id.org/rgom#Actuator"
+    },
+    "Squeegee" : {
+      "@id" : "https://w3id.org/rgom#Squeegee"
+    },
+    "hasHumanCapability" : {
+      "@id" : "https://w3id.org/rgom#hasHumanCapability",
+      "@type" : "@id"
+    },
+    "Manager" : {
+      "@id" : "https://w3id.org/rgom#Manager"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Service" : {
+      "@id" : "https://w3id.org/rgom#Service"
+    },
+    "performsProcess" : {
+      "@id" : "https://w3id.org/rgom#performsProcess",
+      "@type" : "@id"
+    },
+    "isTransferedBy" : {
+      "@id" : "https://w3id.org/rgom#isTransferedBy",
+      "@type" : "@id"
+    },
+    "WorkStation" : {
+      "@id" : "https://w3id.org/rgom#WorkStation"
+    },
+    "hasMachineID" : {
+      "@id" : "https://w3id.org/rgom#hasMachineID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PolybagsPacking" : {
+      "@id" : "https://w3id.org/rgom#PolybagsPacking"
+    },
+    "Color" : {
+      "@id" : "https://w3id.org/rgom#Color"
+    },
+    "Machine" : {
+      "@id" : "https://w3id.org/rgom#Machine"
+    },
+    "requires" : {
+      "@id" : "https://w3id.org/rgom#requires",
+      "@type" : "@id"
+    },
+    "hasTemperature" : {
+      "@id" : "https://w3id.org/rgom#hasTemperature",
+      "@type" : "@id"
+    },
+    "isFeedBy" : {
+      "@id" : "https://w3id.org/rgom#isFeedBy",
+      "@type" : "@id"
+    },
+    "Device" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/ssn#Device"
+    },
+    "ConvyerOperation" : {
+      "@id" : "https://w3id.org/rgom#ConvyerOperation"
+    },
+    "Bar" : {
+      "@id" : "https://w3id.org/rgom#Bar"
+    },
+    "processHasMotorState" : {
+      "@id" : "https://w3id.org/rgom#processHasMotorState",
+      "@type" : "@id"
+    },
+    "hasLocation" : {
+      "@id" : "https://w3id.org/rgom#hasLocation",
+      "@type" : "@id"
+    },
+    "orderHasProcess" : {
+      "@id" : "https://w3id.org/rgom#orderHasProcess",
+      "@type" : "@id"
+    },
+    "isTransferredFrom" : {
+      "@id" : "https://w3id.org/rgom#isTransferredFrom",
+      "@type" : "@id"
+    },
+    "Power" : {
+      "@id" : "https://w3id.org/rgom#Power"
+    },
+    "hasMotorSpeed" : {
+      "@id" : "https://w3id.org/rgom#hasMotorSpeed",
+      "@type" : "@id"
+    },
+    "hasOperatingHours" : {
+      "@id" : "https://w3id.org/rgom#hasOperatingHours",
+      "@type" : "@id"
+    },
+    "Maintenance" : {
+      "@id" : "https://w3id.org/rgom#Maintenance"
+    },
+    "isRotatedBy" : {
+      "@id" : "https://w3id.org/rgom#isRotatedBy",
+      "@type" : "@id"
+    },
+    "hasHardnessValue" : {
+      "@id" : "https://w3id.org/rgom#hasHardnessValue"
+    },
+    "hasFeederVolume" : {
+      "@id" : "https://w3id.org/rgom#hasFeederVolume",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Time" : {
+      "@id" : "http://www.w3.org/2006/time#Time"
+    },
+    "FeederOperation" : {
+      "@id" : "https://w3id.org/rgom#FeederOperation"
+    },
+    "Heater" : {
+      "@id" : "https://w3id.org/rgom#Heater"
+    },
+    "Observation" : {
+      "@id" : "http://www.w3.org/ns/sosa#Observation"
+    },
+    "ProcessHasMotorSpeed" : {
+      "@id" : "https://w3id.org/rgom#ProcessHasMotorSpeed",
+      "@type" : "@id"
+    },
+    "Sit-Prediction" : {
+      "@id" : "https://w3id.org/rgom#Sit-Prediction"
+    },
+    "Sensor" : {
+      "@id" : "https://w3id.org/rgom#Sensor"
+    },
+    "Transfer" : {
+      "@id" : "https://w3id.org/rgom#Transfer"
+    },
+    "hasSimpleResult" : {
+      "@id" : "http://www.w3.org/ns/sosa#hasSimpleResult",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
