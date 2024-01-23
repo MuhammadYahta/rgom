@@ -1,0 +1,1418 @@
+@prefix : <http://www.semanticweb.org/manufacturingproductionline#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/manufacturingproductionline#> .
+
+<http://www.semanticweb.org/manufacturingproductionline#> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1#isPartOf
+<http://purl.org/dc/elements/1.1#isPartOf> rdf:type owl:AnnotationProperty ;
+                                           rdfs:range :ManufacturingFacility ;
+                                           rdfs:domain :Machine .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/manufacturingproductionline#Hardness
+:Hardness rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://www.ontologyrepository.com/CommonCoreOntologies/Container> ;
+          rdfs:range <http://infoneer.txstate.edu/ontology/MSDL_0000009> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#ProcessHasMotorSpeed
+:ProcessHasMotorSpeed rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasSpeed ;
+                      rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                      rdfs:range <http://infoneer.txstate.edu/ontology/MSDL_0000110> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#collectProductFrom
+:collectProductFrom rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Supplier ;
+                    rdfs:range :StorageHall .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#consumesPower
+:consumesPower rdf:type owl:ObjectProperty ;
+               rdfs:domain :AssemblingMachine ,
+                           :ProcessingMachine ;
+               rdfs:range <https://saref.etsi.org/core/Power> ;
+               rdfs:comment "Machine and tool both consumes power. They have different consumption value."@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#contains
+:contains rdf:type owl:ObjectProperty ;
+          rdfs:domain :Line ;
+          rdfs:range :WorkStation .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#deliverProductTo
+:deliverProductTo rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Supplier ;
+                  rdfs:range <http://infoneer.txstate.edu/ontology/MSDL_0000682> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#drives
+:drives rdf:type owl:ObjectProperty ;
+        rdfs:domain <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> ;
+        rdfs:range :Conveyor .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#happensIn
+:happensIn rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+           rdfs:range <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasCapability
+:hasCapability rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasColor
+:hasColor rdf:type owl:ObjectProperty ;
+          rdfs:domain :Product .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasConveyorOperation
+:hasConveyorOperation rdf:type owl:ObjectProperty ;
+                      rdfs:domain :HandlingSystem ;
+                      rdfs:range :ConvyerOperation .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasDevicePressure
+:hasDevicePressure rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasPressure ;
+                   rdfs:domain :AssemblingMachine ,
+                               :ProcessingMachine ;
+                   rdfs:range <http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasFrequency
+:hasFrequency rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://purl.oclc.org/NET/ssnx/ssn#Device> ;
+              rdfs:range <http://infoneer.txstate.edu/ontology/MSDL_0000198> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasHardness
+:hasHardness rdf:type owl:ObjectProperty ;
+             rdfs:range :Hardness .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasHumanCapability
+:hasHumanCapability rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasCapability ;
+                    rdfs:domain :Staff ;
+                    rdfs:range <http://infoneer.txstate.edu/ontology/MSDL_0000009> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasLaserSpeed
+:hasLaserSpeed rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasSpeed ;
+               rdfs:domain <http://infoneer.txstate.edu/ontology/MSDL_0000035> ;
+               rdfs:range <http://infoneer.txstate.edu/ontology/MSDL_0000110> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://infoneer.txstate.edu/ontology/MSDL_0000682> ;
+             rdfs:range <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMachine
+:hasMachine rdf:type owl:ObjectProperty ;
+            rdfs:domain :WorkStation ;
+            rdfs:range :Machine .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMaterialTemp
+:hasMaterialTemp rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Material ;
+                 rdfs:range <http://www.w3.org/ns/sosa#Observation> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMotor
+:hasMotor rdf:type owl:ObjectProperty ;
+          rdfs:domain :Machine ;
+          rdfs:range <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMotorDirection
+:hasMotorDirection rdf:type owl:ObjectProperty ;
+                   rdfs:domain <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> ;
+                   rdfs:range :MotorDirection .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMotorSpeed
+:hasMotorSpeed rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasSpeed ;
+               rdfs:domain <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> ;
+               rdfs:range <http://infoneer.txstate.edu/ontology/MSDL_0000110> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMotorState
+:hasMotorState rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> ;
+               rdfs:range <https://saref.etsi.org/core/State> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMotorTemp
+:hasMotorTemp rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> ;
+              rdfs:range <http://www.w3.org/ns/sosa#Observation> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasObject
+:hasObject rdf:type owl:ObjectProperty ;
+           rdfs:domain :Situation ;
+           rdfs:range <http://www.ontologyrepository.com/CommonCoreOntologies/Container> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasOperatingHours
+:hasOperatingHours rdf:type owl:ObjectProperty ;
+                   rdfs:domain :WorkStation ;
+                   rdfs:range :OperatingHours .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasOrder
+:hasOrder rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://infoneer.txstate.edu/ontology/MSDL_0000682> ;
+          rdfs:range :Order .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasOutput
+:hasOutput rdf:type owl:ObjectProperty ;
+           rdfs:domain :Machine ;
+           rdfs:range :Product .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasPressure
+:hasPressure rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasProcess
+:hasProcess rdf:type owl:ObjectProperty ;
+            rdfs:domain :Situation ;
+            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasProcessPressure
+:hasProcessPressure rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasPressure .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasProduct
+:hasProduct rdf:type owl:ObjectProperty ;
+            rdfs:domain :Order ;
+            rdfs:range :Product .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasSensor
+:hasSensor rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://purl.oclc.org/NET/ssnx/ssn#Device> ;
+           rdfs:range <http://www.w3.org/ns/sosa/Sensor> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasService
+:hasService rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isGivenTo ;
+            rdfs:domain :Product ;
+            rdfs:range :Service .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasSpeed
+:hasSpeed rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasStorageLocation
+:hasStorageLocation rdf:type owl:ObjectProperty ;
+                    rdfs:domain :StorageHall ;
+                    rdfs:range <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasSubProcess
+:hasSubProcess rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasProcess ;
+               rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+               rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasTemperature
+:hasTemperature rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://purl.oclc.org/NET/ssnx/ssn#Device> ;
+                rdfs:range <http://www.w3.org/ns/sosa#Observation> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasTool
+:hasTool rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://purl.oclc.org/NET/ssnx/ssn#Device> ;
+         rdfs:range <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> ,
+                    :Bed ,
+                    :Conveyor ,
+                    :Heater ,
+                    :PressureSensor ,
+                    :VibrationSensor ,
+                    <http://www.w3.org/ns/sosa/Actuator> ,
+                    <https://saref.etsi.org/core/TemperatureSensor> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasToolCapability
+:hasToolCapability rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasCapability ;
+                   rdfs:domain <http://www.ontologyrepository.com/CommonCoreOntologies/Container> ;
+                   rdfs:range <http://infoneer.txstate.edu/ontology/MSDL_0000009> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasUnit
+:hasUnit rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://www.w3.org/ns/sosa#Observation> ;
+         rdfs:range <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasViscosity
+:hasViscosity rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://purl.oclc.org/NET/ssnx/ssn#Device> ;
+              rdfs:range <http://www.w3.org/ns/sosa#Observation> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasWorkstationState
+:hasWorkstationState rdf:type owl:ObjectProperty ;
+                     rdfs:domain :WorkStation ;
+                     rdfs:range <https://saref.etsi.org/core/State> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hostSensor
+:hostSensor rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://infoneer.txstate.edu/ontology/MSDL_0000035> ,
+                        :Machine ;
+            rdfs:range :PressureSensor ,
+                       :VibrationSensor ,
+                       <https://saref.etsi.org/core/TemperatureSensor> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isBasedIn
+:isBasedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Supplier ;
+           rdfs:range <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isComposedOf
+:isComposedOf rdf:type owl:ObjectProperty ;
+              rdfs:domain :Part ;
+              rdfs:range :Material .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isFeedBy
+:isFeedBy rdf:type owl:ObjectProperty ;
+          rdfs:domain :Conveyor ;
+          rdfs:range :Feeder .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isGivenTo
+:isGivenTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :Service ;
+           rdfs:range :Product .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isInLocation
+:isInLocation rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://www.ontologyrepository.com/CommonCoreOntologies/Container> ;
+              rdfs:range <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isOperatedBy
+:isOperatedBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :operatesProcess ;
+              rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+              rdfs:range :Staff .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isPerformedBy
+:isPerformedBy rdf:type owl:ObjectProperty ;
+               owl:inverseOf :performsProcess ;
+               rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+               rdfs:range :Machine .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isPerformedOn
+:isPerformedOn rdf:type owl:ObjectProperty ;
+               rdfs:domain :ManufacturingProcess ;
+               rdfs:range :Material .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isPlacedIn
+:isPlacedIn rdf:type owl:ObjectProperty ;
+            rdfs:domain :Product ;
+            rdfs:range :StorageHall .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isPlacedOn
+:isPlacedOn rdf:type owl:ObjectProperty ;
+            rdfs:domain :Material ;
+            rdfs:range :Bed .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isProducedOn
+:isProducedOn rdf:type owl:ObjectProperty ;
+              rdfs:domain :Product ;
+              rdfs:range :Machine .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isRotatedBy
+:isRotatedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Bed ;
+             rdfs:range <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isTransferedBy
+:isTransferedBy rdf:type owl:ObjectProperty ;
+                rdfs:domain :Material ;
+                rdfs:range :Conveyor .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isTransferredFrom
+:isTransferredFrom rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Material ;
+                   rdfs:range :Pallet .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://www.w3.org/ns/sosa/Sensor> ;
+           rdfs:range <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#operatedBy
+:operatedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :operates ;
+            rdfs:domain :ManufacturingFacility ;
+            rdfs:range :Staff .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#operates
+:operates rdf:type owl:ObjectProperty ;
+          rdfs:domain :Staff ;
+          rdfs:range :ManufacturingFacility .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#operatesProcess
+:operatesProcess rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Staff ;
+                 rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#operationPerformedBy
+:operationPerformedBy rdf:type owl:ObjectProperty ;
+                      owl:inverseOf :performsOperation ;
+                      rdfs:domain :Maintenance ;
+                      rdfs:range :Staff .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#orderHasProcess
+:orderHasProcess rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Order ;
+                 rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#performsOperation
+:performsOperation rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Staff ;
+                   rdfs:range :Maintenance .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#performsProcess
+:performsProcess rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Machine ;
+                 rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#printsColor
+:printsColor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#processConsumesPower
+:processConsumesPower rdf:type owl:ObjectProperty ;
+                      rdfs:domain :AssemblingProcess ,
+                                  :ManufacturingProcess ;
+                      rdfs:range <https://saref.etsi.org/core/Power> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#processHasMotorState
+:processHasMotorState rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain :AssemblingProcess ,
+                                  :ManufacturingProcess ;
+                      rdfs:range :MotorState .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#processHasPressureObservation
+:processHasPressureObservation rdf:type owl:ObjectProperty ;
+                               rdfs:domain :AssemblingProcess ,
+                                           :ManufacturingProcess ;
+                               rdfs:range <http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#processHasTemperatureObservation
+:processHasTemperatureObservation rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :AssemblingProcess ,
+                                              :ManufacturingProcess ;
+                                  rdfs:range <https://saref.etsi.org/core/Temperature> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#processMaterial
+:processMaterial rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Machine ;
+                 rdfs:range :Material .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#produce
+:produce rdf:type owl:ObjectProperty ;
+         rdfs:domain :AssemblingProcess ,
+                     :ManufacturingProcess ;
+         rdfs:range :Product .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#requireService
+:requireService rdf:type owl:ObjectProperty ;
+                rdfs:domain :Order ;
+                rdfs:range :Service ;
+                rdfs:comment "Maintanince or other service is required by customer to old product" .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#requires
+:requires rdf:type owl:ObjectProperty ;
+          rdfs:domain :Product ;
+          rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#useTool
+:useTool rdf:type owl:ObjectProperty ;
+         rdfs:domain :AssemblingProcess ,
+                     :ManufacturingProcess ;
+         rdfs:range <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> ,
+                    :Bed ,
+                    :Conveyor ,
+                    :Heater ,
+                    :PressureSensor ,
+                    :VibrationSensor ,
+                    <http://www.w3.org/ns/sosa/Actuator> ,
+                    <https://saref.etsi.org/core/TemperatureSensor> .
+
+
+###  http://www.w3.org/2006/time#hasTime
+<http://www.w3.org/2006/time#hasTime> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                      rdfs:range <http://www.w3.org/2006/time#Time> .
+
+
+###  http://www.w3.org/ns/sosa#madeBySensor
+<http://www.w3.org/ns/sosa#madeBySensor> rdf:type owl:ObjectProperty ;
+                                         owl:inverseOf <http://www.w3.org/ns/sosa#madeObservation> ;
+                                         rdfs:domain <http://www.w3.org/ns/sosa#Observation> ;
+                                         rdfs:range <http://www.w3.org/ns/sosa/Sensor> .
+
+
+###  http://www.w3.org/ns/sosa#madeObservation
+<http://www.w3.org/ns/sosa#madeObservation> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://www.w3.org/ns/sosa/Sensor> ;
+                                            rdfs:range <http://www.w3.org/ns/sosa#Observation> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasCapabilityValue
+:hasCapabilityValue rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasValue ;
+                    rdfs:domain :HumanCapability .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasColorName
+:hasColorName rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :hasName .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasCompletionDate
+:hasCompletionDate rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :hasDate ;
+                   rdfs:domain :Order ;
+                   rdfs:range xsd:dateTimeStamp .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasConveyorID
+:hasConveyorID rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasID ;
+               rdfs:domain :HandlingSystem ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasCustomerID
+:hasCustomerID rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasID ;
+               rdfs:domain <http://infoneer.txstate.edu/ontology/MSDL_0000682> ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasCustomerName
+:hasCustomerName rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :hasName ;
+                 rdfs:domain <http://infoneer.txstate.edu/ontology/MSDL_0000682> ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasDate
+:hasDate rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasDeliveryDate
+:hasDeliveryDate rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :hasDate ;
+                 rdfs:domain :Order ;
+                 rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasDiameter
+:hasDiameter rdf:type owl:DatatypeProperty ;
+             rdfs:domain <http://infoneer.txstate.edu/ontology/MSDL_0000035> ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasDirection
+:hasDirection rdf:type owl:DatatypeProperty ;
+              rdfs:domain :MotorDirection ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasFeederID
+:hasFeederID rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :hasID ;
+             rdfs:domain :Feeder ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasFeederVolume
+:hasFeederVolume rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Feeder ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasFrequencyValue
+:hasFrequencyValue rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :hasValue ;
+                   rdfs:domain <http://infoneer.txstate.edu/ontology/MSDL_0000198> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasFunction
+:hasFunction rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Machine ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasHardnessValue
+:hasHardnessValue rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :hasValue ;
+                  rdfs:domain :ToolCapability .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasID
+:hasID rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMState
+:hasMState rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :hasState ;
+           rdfs:domain :MotorState ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMachineID
+:hasMachineID rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :hasID ;
+              rdfs:domain :Machine ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMachineModel
+:hasMachineModel rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :hasModel ;
+                 rdfs:domain :Machine ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMachineName
+:hasMachineName rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :hasName ;
+                rdfs:domain :Machine ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMaterialName
+:hasMaterialName rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :hasName ;
+                 rdfs:domain :Material .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasModel
+:hasModel rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMotorID
+:hasMotorID rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :hasID ;
+            rdfs:domain <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasMotorModel
+:hasMotorModel rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasModel ;
+               rdfs:domain <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasName
+:hasName rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasObservedProperty
+:hasObservedProperty rdf:type owl:DatatypeProperty ;
+                     rdfs:domain <http://www.w3.org/ns/sosa#Observation> ;
+                     rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasOrderStatus
+:hasOrderStatus rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Order ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasPlacementDate
+:hasPlacementDate rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :hasDate ;
+                  rdfs:domain :Order ;
+                  rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasPowerValue
+:hasPowerValue rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasValue ;
+               rdfs:domain <https://saref.etsi.org/core/Power> ;
+               rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorId
+:hasPressureSensorId rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :hasID ;
+                     rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorModel
+:hasPressureSensorModel rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :hasSensorModel ;
+                        rdfs:domain <http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasProcessID
+:hasProcessID rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :hasID ;
+              rdfs:domain :ManufacturingProcess ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasProcessName
+:hasProcessName rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :hasName ;
+                rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasProductID
+:hasProductID rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :hasID ;
+              rdfs:domain :Product ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasProductName
+:hasProductName rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :hasName ;
+                rdfs:domain :Product ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasSensorModel
+:hasSensorModel rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasSpeedValue
+:hasSpeedValue rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasValue ;
+               rdfs:domain <http://infoneer.txstate.edu/ontology/MSDL_0000110> ;
+               rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasSprayedAmount
+:hasSprayedAmount rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasSprayedGlueAmount
+:hasSprayedGlueAmount rdf:type owl:DatatypeProperty ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasStaffID
+:hasStaffID rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :hasID ;
+            rdfs:domain :Staff ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasStaffName
+:hasStaffName rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :hasName ;
+              rdfs:domain :Staff ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasState
+:hasState rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasStrokeTime
+:hasStrokeTime rdf:type owl:DatatypeProperty ;
+               rdfs:domain <http://infoneer.txstate.edu/ontology/MSDL_0000038> ;
+               rdfs:range xsd:dateTimeStamp .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorId
+:hasTemperatureSensorId rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :hasID ;
+                        rdfs:domain <https://saref.etsi.org/core/Temperature> ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorModel
+:hasTemperatureSensorModel rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf :hasSensorModel ;
+                           rdfs:domain <https://saref.etsi.org/core/Temperature> ;
+                           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasValue
+:hasValue rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorId
+:hasVibrationSensorId rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :hasID ;
+                      rdfs:domain :Vibration ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorModel
+:hasVibrationSensorModel rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf :hasSensorModel ;
+                         rdfs:domain :Vibration ;
+                         rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasViscositySensorID
+:hasViscositySensorID rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :hasID .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#hasWState
+:hasWState rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :hasState ;
+           rdfs:domain :WorkStationState ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#isInDirection
+:isInDirection rdf:type owl:DatatypeProperty ;
+               rdfs:domain :MotorDirection ;
+               rdfs:range xsd:string .
+
+
+###  http://www.w3.org/2006/time#hasFinishTime
+<http://www.w3.org/2006/time#hasFinishTime> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://www.w3.org/2006/time#Time> ;
+                                            rdfs:range xsd:dateTime .
+
+
+###  http://www.w3.org/2006/time#hasStartTime
+<http://www.w3.org/2006/time#hasStartTime> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://www.w3.org/2006/time#Time> ;
+                                           rdfs:range xsd:dateTime .
+
+
+###  http://www.w3.org/ns/sosa#hasSimpleResult
+<http://www.w3.org/ns/sosa#hasSimpleResult> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://www.w3.org/ns/sosa#Observation> ;
+                                            rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor
+<http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://infoneer.txstate.edu/ontology/MSDL_0000035> ;
+                                                                         rdfs:comment "An engine or motor is a machine designed to convert one form of energy into mechanical energy."@en ;
+                                                                         rdfs:label "Motor"@en .
+
+
+###  http://infoneer.txstate.edu/ontology/MSDL_0000009
+<http://infoneer.txstate.edu/ontology/MSDL_0000009> rdf:type owl:Class ;
+                                                    rdfs:subClassOf :PhysicalQuantity ;
+                                                    rdfs:comment "The ability of an entity to achieve its objectives, specially in relation to its overall mission."@en ;
+                                                    rdfs:label "Capability"@en .
+
+
+###  http://infoneer.txstate.edu/ontology/MSDL_0000035
+<http://infoneer.txstate.edu/ontology/MSDL_0000035> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://purl.oclc.org/NET/ssnx/ssn#Device> ;
+                                                    rdfs:comment "A tool is an object used to extend the ability of a machine to its modify features."@en ;
+                                                    rdfs:label "Tool"@en .
+
+
+###  http://infoneer.txstate.edu/ontology/MSDL_0000038
+<http://infoneer.txstate.edu/ontology/MSDL_0000038> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://infoneer.txstate.edu/ontology/MSDL_0000035> ;
+                                                    rdfs:label "Die" .
+
+
+###  http://infoneer.txstate.edu/ontology/MSDL_0000110
+<http://infoneer.txstate.edu/ontology/MSDL_0000110> rdf:type owl:Class ;
+                                                    rdfs:subClassOf :ToolCapability ;
+                                                    rdfs:comment "the speed of an object is the magnitude of its velocity"@en ;
+                                                    rdfs:label "Speed"@en .
+
+
+###  http://infoneer.txstate.edu/ontology/MSDL_0000198
+<http://infoneer.txstate.edu/ontology/MSDL_0000198> rdf:type owl:Class ;
+                                                    rdfs:subClassOf :ToolCapability ;
+                                                    rdfs:comment "A quality, which inheres in a bearer by virtue of the number of the bearer's repetitive actions in a particular time." ;
+                                                    rdfs:label "Frequency" .
+
+
+###  http://infoneer.txstate.edu/ontology/MSDL_0000682
+<http://infoneer.txstate.edu/ontology/MSDL_0000682> rdf:type owl:Class ;
+                                                    rdfs:comment "A company that plays the role of the consumer of a manufacturing service"@en ;
+                                                    rdfs:label "Customer"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class ;
+                                             rdfs:label "Process"@en .
+
+
+###  http://purl.oclc.org/NET/ssnx/ssn#Device
+<http://purl.oclc.org/NET/ssnx/ssn#Device> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Container> ;
+                                           rdfs:comment "A thing made or adapted for a particular purpose, especially a piece of mechanical or electronic equipment."@en ;
+                                           rdfs:label "Device"@en .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureUnit> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> ;
+                                                                                   owl:disjointWith <http://www.ontology-of-units-of-measure.org/resource/om-2/bar> ,
+                                                                                                    <http://www.ontology-of-units-of-measure.org/resource/om-2/pascal> ;
+                                                                                   rdfs:comment "Temperature Unit"@en ;
+                                                                                   rdfs:label "Celsius Temperature Unit" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureUnit> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> ;
+                                                                                      owl:disjointWith <http://www.ontology-of-units-of-measure.org/resource/om-2/bar> ,
+                                                                                                       <http://www.ontology-of-units-of-measure.org/resource/om-2/pascal> ;
+                                                                                      rdfs:comment "Temperature Unit"@en ;
+                                                                                      rdfs:label "Fahrenheit Temperature Unit" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://www.w3.org/ns/sosa#Observation> ;
+                                                                     rdfs:comment "Pressure is the force applied to or distributed over a surface. It is a derived quantity in the International System of Units. Pressure is force divided by area."@en ;
+                                                                     rdfs:label "Pressure"@en .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/SpeedUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/SpeedUnit> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> ;
+                                                                      rdfs:label "Speed Unit" .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/Unit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> rdf:type owl:Class ;
+                                                                 rdfs:comment "A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called \"metre\"."@en ;
+                                                                 rdfs:label "Unit Of Measurement"@en .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/bar
+<http://www.ontology-of-units-of-measure.org/resource/om-2/bar> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> ;
+                                                                rdfs:label "Bar Pressure Unit"@en .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/pascal
+<http://www.ontology-of-units-of-measure.org/resource/om-2/pascal> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> ;
+                                                                   rdfs:comment "The pascal is a unit of pressure and stress defined as newton divided by square metre = joule divided by cubic metre = kilogram divided by metre second squared."@en ;
+                                                                   rdfs:label "Pascal Pressure Unit"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation
+<http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> rdf:type owl:Class ;
+                                                                          rdfs:comment "A Site that is the location of some Artifact."@en ;
+                                                                          rdfs:label "Location"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Container
+<http://www.ontologyrepository.com/CommonCoreOntologies/Container> rdf:type owl:Class ;
+                                                                   rdfs:comment "A source or supply from which a benefit is produced and that has some utility."@en ;
+                                                                   rdfs:label "Resource"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#AssemblingMachine
+:AssemblingMachine rdf:type owl:Class ;
+                   rdfs:subClassOf :Machine ;
+                   rdfs:comment "A machine combining the semi finished product into finished one."@en ;
+                   rdfs:label "AssemblyMachine"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess
+:AssemblingProcess rdf:type owl:Class ;
+                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                   rdfs:comment "Assemling process is a series of activities performed by assembly machine."@en ;
+                   rdfs:label "AssemblingProcess"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Bed
+:Bed rdf:type owl:Class ;
+     rdfs:subClassOf :HandlingSystem .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Cell
+:Cell rdf:type owl:Class ;
+      rdfs:subClassOf :ManufacturingFacility ;
+      rdfs:comment "Cells are sets of machines that are grouped by the products or parts that they produce. This type of system is used in the cellular manufacturing concept and is distinct from the traditional functional manufacturing system, which groups all similar machines together."@en ;
+      rdfs:label "Cell"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Component
+:Component rdf:type owl:Class ;
+           rdfs:subClassOf :Part ;
+           rdfs:label "Component"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Container
+:Container rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Container> ;
+           rdfs:comment "A container is any receptacle or enclosure for holding a product used in storage, packaging, and shipping."@en ;
+           rdfs:label "Container"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#ContextualData
+:ContextualData rdf:type owl:Class ;
+                rdfs:subClassOf :Parameter ;
+                rdfs:comment "Contextual data is the background information that provides a broader understanding of an event, person, or item."@en ;
+                rdfs:label "Contextual Data"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Conveyor
+:Conveyor rdf:type owl:Class ;
+          rdfs:subClassOf :HandlingSystem ;
+          rdfs:comment "A conveyor mechanism that transports material, good or products across a horizontal or inclined plane over a short to medium distance."@en ;
+          rdfs:label "Conveyor"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#ConvyerOperation
+:ConvyerOperation rdf:type owl:Class ;
+                  rdfs:subClassOf :Handling ;
+                  rdfs:comment "An operation performed by the conveyer in order to transfer a material or product."@en ;
+                  rdfs:label "ConveyorOperation"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Direction
+:Direction rdf:type owl:Class ;
+           rdfs:subClassOf :PhysicalQuantity ;
+           rdfs:label "Direction"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Feeder
+:Feeder rdf:type owl:Class ;
+        rdfs:subClassOf :ManufacturingFacility ;
+        rdfs:comment "Feeder adds materials, or ingredients to a machine or equipment during the manufacturing process."@en ;
+        rdfs:label "Feeder"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#FeederOperation
+:FeederOperation rdf:type owl:Class ;
+                 rdfs:subClassOf :Handling ;
+                 rdfs:comment "An activity of adding a material to converyor or machine."@en ;
+                 rdfs:label "FeederOperation"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Handling
+:Handling rdf:type owl:Class ;
+          rdfs:subClassOf :LogisticProcess ;
+          rdfs:comment "Handling involves short-distance movement within the confines of a location."@en ;
+          rdfs:label "Handling"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#HandlingSystem
+:HandlingSystem rdf:type owl:Class ;
+                rdfs:subClassOf <http://infoneer.txstate.edu/ontology/MSDL_0000035> ;
+                rdfs:comment "A mechanical equipment used for the movement and control of materials, goods and products throughout the process of manufacturing."@en ;
+                rdfs:label "HandlingSystem"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Hardness
+:Hardness rdf:type owl:Class ;
+          rdfs:subClassOf :ToolCapability .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Heater
+:Heater rdf:type owl:Class ;
+        rdfs:subClassOf <http://infoneer.txstate.edu/ontology/MSDL_0000035> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#HumanCapability
+:HumanCapability rdf:type owl:Class ;
+                 rdfs:subClassOf <http://infoneer.txstate.edu/ontology/MSDL_0000009> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#HumanOperation
+:HumanOperation rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:label "HumanOperation"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Line
+:Line rdf:type owl:Class ;
+      rdfs:subClassOf :ManufacturingFacility ;
+      rdfs:comment "It is the arrangement of work centers in a way, so that the product is moved sequentially along the line and stops at work centers along the line where an operation is performed."@en ;
+      rdfs:label "Line"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#LogisticProcess
+:LogisticProcess rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                 rdfs:label "LogisticProcess"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Machine
+:Machine rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.oclc.org/NET/ssnx/ssn#Device> ;
+         rdfs:comment "A machine (or mechanical device) is a mechanical structure that uses power to apply forces and control movement to perform an intended action. Machines can be driven by animals and people, by natural forces such as wind and water, and by chemical, thermal, or electrical power, and include a system of mechanisms that shape the actuator input to achieve a specific application of output forces and movement."@en ;
+         rdfs:label "Machine"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Maintenance
+:Maintenance rdf:type owl:Class ;
+             rdfs:subClassOf :HumanOperation ;
+             rdfs:comment "An operation performed by human to maintain a machine."@en ;
+             rdfs:label "Maintenance"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#MaintenanceTechnician
+:MaintenanceTechnician rdf:type owl:Class ;
+                       rdfs:subClassOf :Staff ;
+                       rdfs:comment "A person who is responsible for reparing or manintenace of the machine or resources in the factory plant."@en ;
+                       rdfs:label "Maintenance"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Manager
+:Manager rdf:type owl:Class ;
+         rdfs:subClassOf :Staff ;
+         rdfs:label "Manager"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#ManualProcess
+:ManualProcess rdf:type owl:Class ;
+               rdfs:subClassOf :HumanOperation .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility
+:ManufacturingFacility rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Container> ;
+                       rdfs:comment "Any resource contributing in the production of goods in the manufacturing produciton line."@en ;
+                       rdfs:label "ManufacturingFacility"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess
+:ManufacturingProcess rdf:type owl:Class ;
+                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                      rdfs:comment "A series of operations or activities performed by Processing Machine."@en ;
+                      rdfs:label "ManufacturingProcess"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Material
+:Material rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Container> ;
+          rdfs:comment "The basic material from which the product is made."@en ;
+          rdfs:label "Material"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#MotorDirection
+:MotorDirection rdf:type owl:Class ;
+                rdfs:subClassOf :Direction ;
+                rdfs:label "MotorDirection"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#MotorState
+:MotorState rdf:type owl:Class ;
+            rdfs:subClassOf <https://saref.etsi.org/core/State> ;
+            rdfs:comment "The state of the motor can be idle, running or faulty."@en ;
+            rdfs:label "MotorState"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#OperatingHours
+:OperatingHours rdf:type owl:Class ;
+                rdfs:subClassOf :Parameter ;
+                rdfs:comment "Operating hours are scheduled by the production planning. It represents the time during which the manufacturing produciton line is maintained running to manufacture products."@en ;
+                rdfs:label "OperatingHours"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Operator
+:Operator rdf:type owl:Class ;
+          rdfs:subClassOf :Staff ;
+          rdfs:comment "A person who is operates the machinary in the production line."@en ;
+          rdfs:label "Operator"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Order
+:Order rdf:type owl:Class ;
+       rdfs:comment "From a seller's point of view it expresses the intention to sell and is referred to as a sales order. When the purchase order of the buyer and the sales order of the seller agree, the orders become a contract between the buyer and seller."@en ;
+       rdfs:label "Order"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Packing
+:Packing rdf:type owl:Class ;
+         rdfs:subClassOf :HumanCapability .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Pallet
+:Pallet rdf:type owl:Class ;
+        rdfs:subClassOf :Container ;
+        rdfs:comment "A pallet (also called a skid) is a flat transport structure, which supports goods in a stable fashion while being lifted by a forklift, a pallet jack, a front loader, a jacking device, or an erect crane. A pallet is the structural foundation of a unit load which allows handling and storage efficiencies. Goods or shipping containers are often placed on a pallet secured with strapping, stretch wrap or shrink wrap and shipped."@en ;
+        rdfs:label "Pallet"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Parameter
+:Parameter rdf:type owl:Class ;
+           rdfs:comment "A parameter is an element of a system that is useful, or critical, when identifying the system, or when evaluating its performance, status, condition, etc."@en ;
+           rdfs:label "Parameter"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Part
+:Part rdf:type owl:Class ;
+      rdfs:subClassOf :Product ;
+      rdfs:comment "The raw material being processed becomes a part." ;
+      rdfs:label "Part"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity
+:PhysicalQuantity rdf:type owl:Class ;
+                  rdfs:subClassOf :Parameter ;
+                  rdfs:comment "A physical quantity is a property of a system that can be quantified by measurement. A physical quantity can be expressed as the combination of a numerical value and a unit."@en ;
+                  rdfs:label "PhysicalQuantity"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#PressureSensor
+:PressureSensor rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                rdfs:comment "A  sensor designated to observe the pressure of a device."@en ;
+                rdfs:label "PressureSensor"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#ProcessingMachine
+:ProcessingMachine rdf:type owl:Class ;
+                   rdfs:subClassOf :Machine ;
+                   rdfs:comment "A machine that perfroms a process  in which a piece of raw material is cut into a desired final shape and size by a controlled material-removal process. The processes that have this common theme, controlled material removal, are today collectively known as subtractive manufacturing, in distinction from processes of controlled material addition, which are known as additive manufacturing."@en ;
+                   rdfs:label "ProcessingMachine"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Product
+:Product rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Container> ;
+         rdfs:comment "In marketing, a product is an object or system made available for consumer use; it is anything that can be offered to a market to satisfy the desire or need of a customer. In retailing, products are often referred to as merchandise, and in manufacturing, products are bought as raw materials and then sold as finished goods."@en ;
+         rdfs:label "Product"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Rotation
+:Rotation rdf:type owl:Class ;
+          rdfs:subClassOf :ToolCapability .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Service
+:Service rdf:type owl:Class ;
+         rdfs:comment "A value delivered to repair the fault or error occured in the purchased product."@en ;
+         rdfs:label "Service"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Sit-Assessment
+:Sit-Assessment rdf:type owl:Class ;
+                rdfs:subClassOf :Situation ;
+                rdfs:label "SituationAssesment"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Sit-Classification
+:Sit-Classification rdf:type owl:Class ;
+                    rdfs:subClassOf :Situation ;
+                    rdfs:label "SituationClassification"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Sit-Diagnosis
+:Sit-Diagnosis rdf:type owl:Class ;
+               rdfs:subClassOf :Situation ;
+               rdfs:label "SituationDiagnosis"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Sit-Monitoring
+:Sit-Monitoring rdf:type owl:Class ;
+                rdfs:subClassOf :Situation ;
+                rdfs:comment "To constantly checek the resources during the production line for abnormal behavior."@en ;
+                rdfs:label "SituationMonitoring"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Sit-Prediction
+:Sit-Prediction rdf:type owl:Class ;
+                rdfs:subClassOf :Situation ;
+                rdfs:label "SituationPrediciton"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Situation
+:Situation rdf:type owl:Class ;
+           rdfs:comment "Situation is the way something is positioned as compared to its surroundings, or the status of the circumstances, or the combination of circumstances at a specific point in time."@en ;
+           rdfs:label "Situation"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Staff
+:Staff rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Container> ;
+       rdfs:comment "Person who is responsible for working in a manufacuritng production line or industry."@en ;
+       rdfs:label "Staff"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#StorageHall
+:StorageHall rdf:type owl:Class ;
+             rdfs:comment "A storeroom in a factory where odds and ends can be stored."@en ;
+             rdfs:label "StorageHall"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Supplier
+:Supplier rdf:type owl:Class ;
+          rdfs:comment "A person or organization that provides something needed such as a product."@en ;
+          rdfs:label "Supplier"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#ToolCapability
+:ToolCapability rdf:type owl:Class ;
+                rdfs:subClassOf <http://infoneer.txstate.edu/ontology/MSDL_0000009> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Transfer
+:Transfer rdf:type owl:Class ;
+          rdfs:subClassOf :ConvyerOperation ;
+          rdfs:comment "The operation of transfering a material or product from one place to another."@en ;
+          rdfs:label "Transfer"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#Vibration
+:Vibration rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/sosa#Observation> ;
+           rdfs:comment "Vibration in motorized equipment is the back-and-forth movement, or oscillation, of machines and components, such as drive motors, driven devices (pumps, compressors and so on), and the bearings, shafts, gears, belts and other elements that make up mechanical systems."@en ;
+           rdfs:label "Vibration"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#VibrationSensor
+:VibrationSensor rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#WorkStation
+:WorkStation rdf:type owl:Class ;
+             rdfs:subClassOf :ManufacturingFacility ;
+             rdfs:comment "Workstations are small integrated physical groupings of machines."@en ;
+             rdfs:label "Workstation"@en .
+
+
+###  http://www.semanticweb.org/manufacturingproductionline#WorkStationState
+:WorkStationState rdf:type owl:Class ;
+                  rdfs:subClassOf <https://saref.etsi.org/core/State> ;
+                  rdfs:comment "The state of the workstation can be idle, working or faulty."@en ;
+                  rdfs:label "WorkstationState"@en .
+
+
+###  http://www.w3.org/2006/time#Time
+<http://www.w3.org/2006/time#Time> rdf:type owl:Class ;
+                                   rdfs:comment "Time is the indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past, through the present, into the future. It is a component quantity of various measurements used to sequence events, to compare the duration of events or the intervals between them, and to quantify rates of change of quantities in material reality or in the conscious experience."@en ;
+                                   rdfs:label "Time"@en .
+
+
+###  http://www.w3.org/ns/sosa#Observation
+<http://www.w3.org/ns/sosa#Observation> rdf:type owl:Class ;
+                                        rdfs:subClassOf :PhysicalQuantity ;
+                                        rdfs:comment "An Observation is a Situation in which a Sensing method has been used to estimate or calculate a value of a Property."@en ;
+                                        rdfs:label "Observation"@en .
+
+
+###  http://www.w3.org/ns/sosa/Actuator
+<http://www.w3.org/ns/sosa/Actuator> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://infoneer.txstate.edu/ontology/MSDL_0000035> ;
+                                     rdfs:comment "A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world."@en ;
+                                     rdfs:label "Actuator"@en .
+
+
+###  http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.oclc.org/NET/ssnx/ssn#Device> ;
+                                   rdfs:comment "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."@en ;
+                                   rdfs:label "Sensor"@en .
+
+
+###  https://saref.etsi.org/core/Power
+<https://saref.etsi.org/core/Power> rdf:type owl:Class ;
+                                    rdfs:subClassOf :PhysicalQuantity ;
+                                    rdfs:comment "A saref:Property related to some measurements that are characterized by a certain value that is measured in a power unit (such as watt or kilowatt). Further specializations of the saref:Power class can be found in the SAREF4ENER extension, where classes such as PowerMax, PowerMin and PowerExpected are defined."@en ;
+                                    rdfs:label "Power"@en .
+
+
+###  https://saref.etsi.org/core/State
+<https://saref.etsi.org/core/State> rdf:type owl:Class ;
+                                    rdfs:subClassOf :ContextualData ;
+                                    rdfs:comment "The state in which a device can be found, e.g, ON/OFF/STANDBY, or ONLINE/OFFLINE, or  running, woking, idle or faulty. We propose here a list of states that are relevant for the purpose of SAREF, but this list can be extended."@en ;
+                                    rdfs:label "State"@en .
+
+
+###  https://saref.etsi.org/core/Temperature
+<https://saref.etsi.org/core/Temperature> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.w3.org/ns/sosa#Observation> ;
+                                          rdfs:comment "A saref:Property related to some measurements that are characterized by a certain value that is measured in a temperature unit (degree_Celsius, degree_Fahrenheit, or degree_kelvin)"@en ;
+                                          rdfs:label "Temperature"@en .
+
+
+###  https://saref.etsi.org/core/TemperatureSensor
+<https://saref.etsi.org/core/TemperatureSensor> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ;
+                                                rdfs:comment "A sensor that is used for the purpose of sensing a property of type saref:Temperature. A saref:TemperatureSensor is typically used to saref:accomplish saref:Comfort."@en ;
+                                                rdfs:label "TemperatureSensor"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
