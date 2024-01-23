@@ -1,0 +1,781 @@
+{
+  "@context" : {
+    "hasMotorState" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotorState",
+      "@type" : "@id"
+    },
+    "SpeedUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpeedUnit"
+    },
+    "operatesProcess" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#operatesProcess",
+      "@type" : "@id"
+    },
+    "hasSpeed" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSpeed",
+      "@type" : "@id"
+    },
+    "hasMotorID" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotorID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "MotorState" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#MotorState"
+    },
+    "HandlingSystem" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#HandlingSystem"
+    },
+    "FahrenheitTemperatureUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureUnit"
+    },
+    "Situation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Situation"
+    },
+    "bar" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/bar"
+    },
+    "isOperatedBy" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isOperatedBy",
+      "@type" : "@id"
+    },
+    "isInDirection" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isInDirection",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasProcessPressure" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProcessPressure",
+      "@type" : "@id"
+    },
+    "Order" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Order"
+    },
+    "Unit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+    },
+    "WorkStationState" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#WorkStationState"
+    },
+    "MotorDirection" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#MotorDirection"
+    },
+    "hasDevicePressure" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDevicePressure",
+      "@type" : "@id"
+    },
+    "processConsumesPower" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#processConsumesPower",
+      "@type" : "@id"
+    },
+    "hasCustomerID" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasCustomerID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Line" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Line"
+    },
+    "hasToolCapability" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasToolCapability",
+      "@type" : "@id"
+    },
+    "isBasedIn" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isBasedIn",
+      "@type" : "@id"
+    },
+    "CelsiusTemperatureUnit" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureUnit"
+    },
+    "hasColorName" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasColorName"
+    },
+    "isPerformedOn" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isPerformedOn",
+      "@type" : "@id"
+    },
+    "Direction" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Direction"
+    },
+    "hasHardness" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasHardness",
+      "@type" : "@id"
+    },
+    "hasModel" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasModel"
+    },
+    "hasMachine" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMachine",
+      "@type" : "@id"
+    },
+    "hasObject" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasObject",
+      "@type" : "@id"
+    },
+    "hasCustomerName" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasCustomerName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ProcessingMachine" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#ProcessingMachine"
+    },
+    "operates" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#operates",
+      "@type" : "@id"
+    },
+    "Material" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Material"
+    },
+    "PressureSensor" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#PressureSensor"
+    },
+    "hasPlacementDate" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasPlacementDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Sit-Monitoring" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Sit-Monitoring"
+    },
+    "drives" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#drives",
+      "@type" : "@id"
+    },
+    "Handling" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Handling"
+    },
+    "Feeder" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Feeder"
+    },
+    "Product" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+    },
+    "hasFrequency" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasFrequency",
+      "@type" : "@id"
+    },
+    "hasName" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasName"
+    },
+    "pascal" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/pascal"
+    },
+    "hasOutput" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasOutput",
+      "@type" : "@id"
+    },
+    "hasID" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+    },
+    "deliverProductTo" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#deliverProductTo",
+      "@type" : "@id"
+    },
+    "hasMotorDirection" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotorDirection",
+      "@type" : "@id"
+    },
+    "hasValue" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasValue"
+    },
+    "useTool" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#useTool",
+      "@type" : "@id"
+    },
+    "hasStaffID" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasStaffID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Sit-Assessment" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Sit-Assessment"
+    },
+    "madeBySensor" : {
+      "@id" : "http://www.w3.org/ns/sosa#madeBySensor",
+      "@type" : "@id"
+    },
+    "MSDL_0000035" : {
+      "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000035"
+    },
+    "MSDL_0000110" : {
+      "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000110"
+    },
+    "hasProductID" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProductID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasConveyorOperation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasConveyorOperation",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasFinishTime" : {
+      "@id" : "http://www.w3.org/2006/time#hasFinishTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "contains" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#contains",
+      "@type" : "@id"
+    },
+    "ContextualData" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#ContextualData"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/elements/1.1#isPartOf"
+    },
+    "processHasTemperatureObservation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#processHasTemperatureObservation",
+      "@type" : "@id"
+    },
+    "hasStartTime" : {
+      "@id" : "http://www.w3.org/2006/time#hasStartTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasWorkstationState" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasWorkstationState",
+      "@type" : "@id"
+    },
+    "hasColor" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasColor",
+      "@type" : "@id"
+    },
+    "hasViscositySensorID" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasViscositySensorID"
+    },
+    "isPlacedOn" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isPlacedOn",
+      "@type" : "@id"
+    },
+    "hasStorageLocation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasStorageLocation",
+      "@type" : "@id"
+    },
+    "hasSprayedAmount" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSprayedAmount"
+    },
+    "hasMachineName" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMachineName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMState" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMState",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "operatedBy" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#operatedBy",
+      "@type" : "@id"
+    },
+    "hasOrderStatus" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasOrderStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasVibrationSensorModel" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Temperature" : {
+      "@id" : "https://saref.etsi.org/core/Temperature"
+    },
+    "Packing" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Packing"
+    },
+    "Vibration" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Vibration"
+    },
+    "Hardness" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Hardness",
+      "@type" : "@id"
+    },
+    "ManufacturingFacility" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility"
+    },
+    "hasFrequencyValue" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasFrequencyValue"
+    },
+    "hasPressureSensorModel" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "HumanOperation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#HumanOperation"
+    },
+    "hasMaterialTemp" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMaterialTemp",
+      "@type" : "@id"
+    },
+    "hasMaterialName" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMaterialName"
+    },
+    "isGivenTo" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isGivenTo",
+      "@type" : "@id"
+    },
+    "hasDate" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDate"
+    },
+    "PhysicalQuantity" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity"
+    },
+    "hasProductName" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProductName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ManufacturingProcess" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess"
+    },
+    "hasPressure" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasPressure",
+      "@type" : "@id"
+    },
+    "printsColor" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#printsColor",
+      "@type" : "@id"
+    },
+    "hasDeliveryDate" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDeliveryDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "processMaterial" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#processMaterial",
+      "@type" : "@id"
+    },
+    "hasPowerValue" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasPowerValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasProcess" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProcess",
+      "@type" : "@id"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "hasTime" : {
+      "@id" : "http://www.w3.org/2006/time#hasTime",
+      "@type" : "@id"
+    },
+    "hasProduct" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProduct",
+      "@type" : "@id"
+    },
+    "Supplier" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Supplier"
+    },
+    "hasService" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasService",
+      "@type" : "@id"
+    },
+    "Motor" : {
+      "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor"
+    },
+    "Rotation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Rotation"
+    },
+    "Sit-Classification" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Sit-Classification"
+    },
+    "performsOperation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#performsOperation",
+      "@type" : "@id"
+    },
+    "hasMotorModel" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotorModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "requireService" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#requireService",
+      "@type" : "@id"
+    },
+    "hasSpeedValue" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSpeedValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "OperatingHours" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#OperatingHours"
+    },
+    "hasConveyorID" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasConveyorID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isPerformedBy" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isPerformedBy",
+      "@type" : "@id"
+    },
+    "hasStrokeTime" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasStrokeTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "isProducedOn" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isProducedOn",
+      "@type" : "@id"
+    },
+    "Pallet" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Pallet"
+    },
+    "AssemblingMachine" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#AssemblingMachine"
+    },
+    "Container" : {
+      "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/Container"
+    },
+    "ManualProcess" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManualProcess"
+    },
+    "isInLocation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isInLocation",
+      "@type" : "@id"
+    },
+    "operationPerformedBy" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#operationPerformedBy",
+      "@type" : "@id"
+    },
+    "isPlacedIn" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isPlacedIn",
+      "@type" : "@id"
+    },
+    "BFO_0000015" : {
+      "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+    },
+    "Pressure" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure"
+    },
+    "hasCapability" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasCapability",
+      "@type" : "@id"
+    },
+    "happensIn" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#happensIn",
+      "@type" : "@id"
+    },
+    "hasSubProcess" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSubProcess",
+      "@type" : "@id"
+    },
+    "Sit-Diagnosis" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Sit-Diagnosis"
+    },
+    "hasCompletionDate" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasCompletionDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "Conveyor" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Conveyor"
+    },
+    "LogisticProcess" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#LogisticProcess"
+    },
+    "hasDiameter" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDiameter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasProcessName" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProcessName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasSensor" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSensor",
+      "@type" : "@id"
+    },
+    "consumesPower" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#consumesPower",
+      "@type" : "@id"
+    },
+    "hasTemperatureSensorId" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "HumanCapability" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#HumanCapability"
+    },
+    "Parameter" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Parameter"
+    },
+    "VibrationSensor" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#VibrationSensor"
+    },
+    "Part" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Part"
+    },
+    "hasOrder" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasOrder",
+      "@type" : "@id"
+    },
+    "collectProductFrom" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#collectProductFrom",
+      "@type" : "@id"
+    },
+    "hasObservedProperty" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasObservedProperty",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasCapabilityValue" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasCapabilityValue"
+    },
+    "hasMachineModel" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMachineModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "MaintenanceTechnician" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#MaintenanceTechnician"
+    },
+    "MSDL_0000682" : {
+      "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000682"
+    },
+    "MSDL_0000038" : {
+      "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000038"
+    },
+    "ToolCapability" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#ToolCapability"
+    },
+    "ArtifactLocation" : {
+      "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation"
+    },
+    "MSDL_0000198" : {
+      "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000198"
+    },
+    "hasMotorTemp" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotorTemp",
+      "@type" : "@id"
+    },
+    "Bed" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Bed"
+    },
+    "hasDirection" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDirection",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasFunction" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasFunction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "produce" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#produce",
+      "@type" : "@id"
+    },
+    "Staff" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+    },
+    "hasViscosity" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasViscosity",
+      "@type" : "@id"
+    },
+    "TemperatureSensor" : {
+      "@id" : "https://saref.etsi.org/core/TemperatureSensor"
+    },
+    "hasPressureSensorId" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasFeederID" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasFeederID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMotor" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotor",
+      "@type" : "@id"
+    },
+    "Operator" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Operator"
+    },
+    "hostSensor" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hostSensor",
+      "@type" : "@id"
+    },
+    "hasSensorModel" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSensorModel"
+    },
+    "hasVibrationSensorId" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasStaffName" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasStaffName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasUnit" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasUnit",
+      "@type" : "@id"
+    },
+    "madeObservation" : {
+      "@id" : "http://www.w3.org/ns/sosa#madeObservation",
+      "@type" : "@id"
+    },
+    "locatedIn" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#locatedIn",
+      "@type" : "@id"
+    },
+    "MSDL_0000009" : {
+      "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000009"
+    },
+    "hasTemperatureSensorModel" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Component" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Component"
+    },
+    "hasWState" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasWState",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Cell" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Cell"
+    },
+    "processHasPressureObservation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#processHasPressureObservation",
+      "@type" : "@id"
+    },
+    "hasState" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasState"
+    },
+    "hasTool" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasTool",
+      "@type" : "@id"
+    },
+    "hasProcessID" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProcessID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "State" : {
+      "@id" : "https://saref.etsi.org/core/State"
+    },
+    "hasSprayedGlueAmount" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSprayedGlueAmount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AssemblingProcess" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess"
+    },
+    "hasLaserSpeed" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasLaserSpeed",
+      "@type" : "@id"
+    },
+    "isComposedOf" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isComposedOf",
+      "@type" : "@id"
+    },
+    "StorageHall" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#StorageHall"
+    },
+    "Actuator" : {
+      "@id" : "http://www.w3.org/ns/sosa/Actuator"
+    },
+    "hasHumanCapability" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasHumanCapability",
+      "@type" : "@id"
+    },
+    "Manager" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Manager"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Service" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Service"
+    },
+    "performsProcess" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#performsProcess",
+      "@type" : "@id"
+    },
+    "isTransferedBy" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isTransferedBy",
+      "@type" : "@id"
+    },
+    "WorkStation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#WorkStation"
+    },
+    "hasMachineID" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMachineID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Machine" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+    },
+    "requires" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#requires",
+      "@type" : "@id"
+    },
+    "hasTemperature" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasTemperature",
+      "@type" : "@id"
+    },
+    "isFeedBy" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isFeedBy",
+      "@type" : "@id"
+    },
+    "Device" : {
+      "@id" : "http://purl.oclc.org/NET/ssnx/ssn#Device"
+    },
+    "ConvyerOperation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#ConvyerOperation"
+    },
+    "processHasMotorState" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#processHasMotorState",
+      "@type" : "@id"
+    },
+    "hasLocation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasLocation",
+      "@type" : "@id"
+    },
+    "orderHasProcess" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#orderHasProcess",
+      "@type" : "@id"
+    },
+    "isTransferredFrom" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isTransferredFrom",
+      "@type" : "@id"
+    },
+    "Power" : {
+      "@id" : "https://saref.etsi.org/core/Power"
+    },
+    "hasMotorSpeed" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotorSpeed",
+      "@type" : "@id"
+    },
+    "hasOperatingHours" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasOperatingHours",
+      "@type" : "@id"
+    },
+    "Maintenance" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Maintenance"
+    },
+    "isRotatedBy" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#isRotatedBy",
+      "@type" : "@id"
+    },
+    "hasHardnessValue" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasHardnessValue"
+    },
+    "hasFeederVolume" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasFeederVolume",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Time" : {
+      "@id" : "http://www.w3.org/2006/time#Time"
+    },
+    "FeederOperation" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#FeederOperation"
+    },
+    "Heater" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Heater"
+    },
+    "Observation" : {
+      "@id" : "http://www.w3.org/ns/sosa#Observation"
+    },
+    "ProcessHasMotorSpeed" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#ProcessHasMotorSpeed",
+      "@type" : "@id"
+    },
+    "Sit-Prediction" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Sit-Prediction"
+    },
+    "Sensor" : {
+      "@id" : "http://www.w3.org/ns/sosa/Sensor"
+    },
+    "Transfer" : {
+      "@id" : "http://www.semanticweb.org/manufacturingproductionline#Transfer"
+    },
+    "hasSimpleResult" : {
+      "@id" : "http://www.w3.org/ns/sosa#hasSimpleResult",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}

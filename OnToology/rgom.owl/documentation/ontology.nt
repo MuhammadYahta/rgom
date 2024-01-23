@@ -1,0 +1,1211 @@
+<http://www.semanticweb.org/manufacturingproductionline#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1#isPartOf
+<http://purl.org/dc/elements/1.1#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility> .
+<http://purl.org/dc/elements/1.1#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Hardness
+<http://www.semanticweb.org/manufacturingproductionline#Hardness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#Hardness> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologyrepository.com/CommonCoreOntologies/Container> .
+<http://www.semanticweb.org/manufacturingproductionline#Hardness> <http://www.w3.org/2000/01/rdf-schema#range> <http://infoneer.txstate.edu/ontology/MSDL_0000009> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#ProcessHasMotorSpeed
+<http://www.semanticweb.org/manufacturingproductionline#ProcessHasMotorSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#ProcessHasMotorSpeed> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasSpeed> .
+<http://www.semanticweb.org/manufacturingproductionline#ProcessHasMotorSpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/manufacturingproductionline#ProcessHasMotorSpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://infoneer.txstate.edu/ontology/MSDL_0000110> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#collectProductFrom
+<http://www.semanticweb.org/manufacturingproductionline#collectProductFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#collectProductFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Supplier> .
+<http://www.semanticweb.org/manufacturingproductionline#collectProductFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#StorageHall> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#consumesPower
+<http://www.semanticweb.org/manufacturingproductionline#consumesPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#consumesPower> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#AssemblingMachine> .
+<http://www.semanticweb.org/manufacturingproductionline#consumesPower> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#ProcessingMachine> .
+<http://www.semanticweb.org/manufacturingproductionline#consumesPower> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core/Power> .
+<http://www.semanticweb.org/manufacturingproductionline#consumesPower> <http://www.w3.org/2000/01/rdf-schema#comment> "Machine and tool both consumes power. They have different consumption value."@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#contains
+<http://www.semanticweb.org/manufacturingproductionline#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Line> .
+<http://www.semanticweb.org/manufacturingproductionline#contains> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#WorkStation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#deliverProductTo
+<http://www.semanticweb.org/manufacturingproductionline#deliverProductTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#deliverProductTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Supplier> .
+<http://www.semanticweb.org/manufacturingproductionline#deliverProductTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://infoneer.txstate.edu/ontology/MSDL_0000682> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#drives
+<http://www.semanticweb.org/manufacturingproductionline#drives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#drives> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+<http://www.semanticweb.org/manufacturingproductionline#drives> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Conveyor> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#happensIn
+<http://www.semanticweb.org/manufacturingproductionline#happensIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#happensIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/manufacturingproductionline#happensIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasCapability
+<http://www.semanticweb.org/manufacturingproductionline#hasCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasColor
+<http://www.semanticweb.org/manufacturingproductionline#hasColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasColor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Product> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasConveyorOperation
+<http://www.semanticweb.org/manufacturingproductionline#hasConveyorOperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasConveyorOperation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#HandlingSystem> .
+<http://www.semanticweb.org/manufacturingproductionline#hasConveyorOperation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#ConvyerOperation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasDevicePressure
+<http://www.semanticweb.org/manufacturingproductionline#hasDevicePressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasDevicePressure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasPressure> .
+<http://www.semanticweb.org/manufacturingproductionline#hasDevicePressure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#AssemblingMachine> .
+<http://www.semanticweb.org/manufacturingproductionline#hasDevicePressure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#ProcessingMachine> .
+<http://www.semanticweb.org/manufacturingproductionline#hasDevicePressure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasFrequency
+<http://www.semanticweb.org/manufacturingproductionline#hasFrequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasFrequency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.oclc.org/NET/ssnx/ssn#Device> .
+<http://www.semanticweb.org/manufacturingproductionline#hasFrequency> <http://www.w3.org/2000/01/rdf-schema#range> <http://infoneer.txstate.edu/ontology/MSDL_0000198> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasHardness
+<http://www.semanticweb.org/manufacturingproductionline#hasHardness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasHardness> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Hardness> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasHumanCapability
+<http://www.semanticweb.org/manufacturingproductionline#hasHumanCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasHumanCapability> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasCapability> .
+<http://www.semanticweb.org/manufacturingproductionline#hasHumanCapability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Staff> .
+<http://www.semanticweb.org/manufacturingproductionline#hasHumanCapability> <http://www.w3.org/2000/01/rdf-schema#range> <http://infoneer.txstate.edu/ontology/MSDL_0000009> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasLaserSpeed
+<http://www.semanticweb.org/manufacturingproductionline#hasLaserSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasLaserSpeed> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasSpeed> .
+<http://www.semanticweb.org/manufacturingproductionline#hasLaserSpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://infoneer.txstate.edu/ontology/MSDL_0000035> .
+<http://www.semanticweb.org/manufacturingproductionline#hasLaserSpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://infoneer.txstate.edu/ontology/MSDL_0000110> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasLocation
+<http://www.semanticweb.org/manufacturingproductionline#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://infoneer.txstate.edu/ontology/MSDL_0000682> .
+<http://www.semanticweb.org/manufacturingproductionline#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMachine
+<http://www.semanticweb.org/manufacturingproductionline#hasMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMachine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#WorkStation> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMachine> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMaterialTemp
+<http://www.semanticweb.org/manufacturingproductionline#hasMaterialTemp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMaterialTemp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Material> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMaterialTemp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa#Observation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMotor
+<http://www.semanticweb.org/manufacturingproductionline#hasMotor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotor> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMotorDirection
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#MotorDirection> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMotorSpeed
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorSpeed> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasSpeed> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorSpeed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorSpeed> <http://www.w3.org/2000/01/rdf-schema#range> <http://infoneer.txstate.edu/ontology/MSDL_0000110> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMotorState
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorState> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core/State> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMotorTemp
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorTemp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorTemp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorTemp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa#Observation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasObject
+<http://www.semanticweb.org/manufacturingproductionline#hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Situation> .
+<http://www.semanticweb.org/manufacturingproductionline#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologyrepository.com/CommonCoreOntologies/Container> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasOperatingHours
+<http://www.semanticweb.org/manufacturingproductionline#hasOperatingHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasOperatingHours> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#WorkStation> .
+<http://www.semanticweb.org/manufacturingproductionline#hasOperatingHours> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#OperatingHours> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasOrder
+<http://www.semanticweb.org/manufacturingproductionline#hasOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://infoneer.txstate.edu/ontology/MSDL_0000682> .
+<http://www.semanticweb.org/manufacturingproductionline#hasOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Order> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasOutput
+<http://www.semanticweb.org/manufacturingproductionline#hasOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasOutput> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+<http://www.semanticweb.org/manufacturingproductionline#hasOutput> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Product> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasPressure
+<http://www.semanticweb.org/manufacturingproductionline#hasPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasProcess
+<http://www.semanticweb.org/manufacturingproductionline#hasProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Situation> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProcess> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000015> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasProcessPressure
+<http://www.semanticweb.org/manufacturingproductionline#hasProcessPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProcessPressure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasPressure> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasProduct
+<http://www.semanticweb.org/manufacturingproductionline#hasProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProduct> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Order> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProduct> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Product> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasSensor
+<http://www.semanticweb.org/manufacturingproductionline#hasSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasSensor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.oclc.org/NET/ssnx/ssn#Device> .
+<http://www.semanticweb.org/manufacturingproductionline#hasSensor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa/Sensor> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasService
+<http://www.semanticweb.org/manufacturingproductionline#hasService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasService> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/manufacturingproductionline#isGivenTo> .
+<http://www.semanticweb.org/manufacturingproductionline#hasService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Product> .
+<http://www.semanticweb.org/manufacturingproductionline#hasService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Service> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasSpeed
+<http://www.semanticweb.org/manufacturingproductionline#hasSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasStorageLocation
+<http://www.semanticweb.org/manufacturingproductionline#hasStorageLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasStorageLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#StorageHall> .
+<http://www.semanticweb.org/manufacturingproductionline#hasStorageLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasSubProcess
+<http://www.semanticweb.org/manufacturingproductionline#hasSubProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasSubProcess> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#hasSubProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/manufacturingproductionline#hasSubProcess> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000015> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasTemperature
+<http://www.semanticweb.org/manufacturingproductionline#hasTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTemperature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.oclc.org/NET/ssnx/ssn#Device> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTemperature> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa#Observation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasTool
+<http://www.semanticweb.org/manufacturingproductionline#hasTool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTool> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.oclc.org/NET/ssnx/ssn#Device> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Bed> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Conveyor> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Heater> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#PressureSensor> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#VibrationSensor> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa/Actuator> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTool> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core/TemperatureSensor> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasToolCapability
+<http://www.semanticweb.org/manufacturingproductionline#hasToolCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasToolCapability> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasCapability> .
+<http://www.semanticweb.org/manufacturingproductionline#hasToolCapability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologyrepository.com/CommonCoreOntologies/Container> .
+<http://www.semanticweb.org/manufacturingproductionline#hasToolCapability> <http://www.w3.org/2000/01/rdf-schema#range> <http://infoneer.txstate.edu/ontology/MSDL_0000009> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasUnit
+<http://www.semanticweb.org/manufacturingproductionline#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa#Observation> .
+<http://www.semanticweb.org/manufacturingproductionline#hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasViscosity
+<http://www.semanticweb.org/manufacturingproductionline#hasViscosity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasViscosity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.oclc.org/NET/ssnx/ssn#Device> .
+<http://www.semanticweb.org/manufacturingproductionline#hasViscosity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa#Observation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasWorkstationState
+<http://www.semanticweb.org/manufacturingproductionline#hasWorkstationState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasWorkstationState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#WorkStation> .
+<http://www.semanticweb.org/manufacturingproductionline#hasWorkstationState> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core/State> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hostSensor
+<http://www.semanticweb.org/manufacturingproductionline#hostSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hostSensor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://infoneer.txstate.edu/ontology/MSDL_0000035> .
+<http://www.semanticweb.org/manufacturingproductionline#hostSensor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+<http://www.semanticweb.org/manufacturingproductionline#hostSensor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#PressureSensor> .
+<http://www.semanticweb.org/manufacturingproductionline#hostSensor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#VibrationSensor> .
+<http://www.semanticweb.org/manufacturingproductionline#hostSensor> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core/TemperatureSensor> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isBasedIn
+<http://www.semanticweb.org/manufacturingproductionline#isBasedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isBasedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Supplier> .
+<http://www.semanticweb.org/manufacturingproductionline#isBasedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isComposedOf
+<http://www.semanticweb.org/manufacturingproductionline#isComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isComposedOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Part> .
+<http://www.semanticweb.org/manufacturingproductionline#isComposedOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Material> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isFeedBy
+<http://www.semanticweb.org/manufacturingproductionline#isFeedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isFeedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Conveyor> .
+<http://www.semanticweb.org/manufacturingproductionline#isFeedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Feeder> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isGivenTo
+<http://www.semanticweb.org/manufacturingproductionline#isGivenTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isGivenTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Service> .
+<http://www.semanticweb.org/manufacturingproductionline#isGivenTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Product> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isInLocation
+<http://www.semanticweb.org/manufacturingproductionline#isInLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isInLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontologyrepository.com/CommonCoreOntologies/Container> .
+<http://www.semanticweb.org/manufacturingproductionline#isInLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isOperatedBy
+<http://www.semanticweb.org/manufacturingproductionline#isOperatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isOperatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/manufacturingproductionline#operatesProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#isOperatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/manufacturingproductionline#isOperatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Staff> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isPerformedBy
+<http://www.semanticweb.org/manufacturingproductionline#isPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isPerformedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/manufacturingproductionline#performsProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/manufacturingproductionline#isPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isPerformedOn
+<http://www.semanticweb.org/manufacturingproductionline#isPerformedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isPerformedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#isPerformedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Material> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isPlacedIn
+<http://www.semanticweb.org/manufacturingproductionline#isPlacedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isPlacedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Product> .
+<http://www.semanticweb.org/manufacturingproductionline#isPlacedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#StorageHall> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isPlacedOn
+<http://www.semanticweb.org/manufacturingproductionline#isPlacedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isPlacedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Material> .
+<http://www.semanticweb.org/manufacturingproductionline#isPlacedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Bed> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isProducedOn
+<http://www.semanticweb.org/manufacturingproductionline#isProducedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isProducedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Product> .
+<http://www.semanticweb.org/manufacturingproductionline#isProducedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isRotatedBy
+<http://www.semanticweb.org/manufacturingproductionline#isRotatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isRotatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Bed> .
+<http://www.semanticweb.org/manufacturingproductionline#isRotatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isTransferedBy
+<http://www.semanticweb.org/manufacturingproductionline#isTransferedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isTransferedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Material> .
+<http://www.semanticweb.org/manufacturingproductionline#isTransferedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Conveyor> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isTransferredFrom
+<http://www.semanticweb.org/manufacturingproductionline#isTransferredFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isTransferredFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Material> .
+<http://www.semanticweb.org/manufacturingproductionline#isTransferredFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Pallet> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#locatedIn
+<http://www.semanticweb.org/manufacturingproductionline#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.semanticweb.org/manufacturingproductionline#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#operatedBy
+<http://www.semanticweb.org/manufacturingproductionline#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#operatedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/manufacturingproductionline#operates> .
+<http://www.semanticweb.org/manufacturingproductionline#operatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility> .
+<http://www.semanticweb.org/manufacturingproductionline#operatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Staff> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#operates
+<http://www.semanticweb.org/manufacturingproductionline#operates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#operates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Staff> .
+<http://www.semanticweb.org/manufacturingproductionline#operates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#operatesProcess
+<http://www.semanticweb.org/manufacturingproductionline#operatesProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#operatesProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Staff> .
+<http://www.semanticweb.org/manufacturingproductionline#operatesProcess> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000015> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#operationPerformedBy
+<http://www.semanticweb.org/manufacturingproductionline#operationPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#operationPerformedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/manufacturingproductionline#performsOperation> .
+<http://www.semanticweb.org/manufacturingproductionline#operationPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Maintenance> .
+<http://www.semanticweb.org/manufacturingproductionline#operationPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Staff> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#orderHasProcess
+<http://www.semanticweb.org/manufacturingproductionline#orderHasProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#orderHasProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Order> .
+<http://www.semanticweb.org/manufacturingproductionline#orderHasProcess> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000015> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#performsOperation
+<http://www.semanticweb.org/manufacturingproductionline#performsOperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#performsOperation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Staff> .
+<http://www.semanticweb.org/manufacturingproductionline#performsOperation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Maintenance> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#performsProcess
+<http://www.semanticweb.org/manufacturingproductionline#performsProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#performsProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+<http://www.semanticweb.org/manufacturingproductionline#performsProcess> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000015> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#printsColor
+<http://www.semanticweb.org/manufacturingproductionline#printsColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#processConsumesPower
+<http://www.semanticweb.org/manufacturingproductionline#processConsumesPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#processConsumesPower> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#processConsumesPower> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#processConsumesPower> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core/Power> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#processHasMotorState
+<http://www.semanticweb.org/manufacturingproductionline#processHasMotorState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#processHasMotorState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#processHasMotorState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#processHasMotorState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#processHasMotorState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#MotorState> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#processHasPressureObservation
+<http://www.semanticweb.org/manufacturingproductionline#processHasPressureObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#processHasPressureObservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#processHasPressureObservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#processHasPressureObservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#processHasTemperatureObservation
+<http://www.semanticweb.org/manufacturingproductionline#processHasTemperatureObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#processHasTemperatureObservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#processHasTemperatureObservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#processHasTemperatureObservation> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core/Temperature> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#processMaterial
+<http://www.semanticweb.org/manufacturingproductionline#processMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#processMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+<http://www.semanticweb.org/manufacturingproductionline#processMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Material> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#produce
+<http://www.semanticweb.org/manufacturingproductionline#produce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#produce> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#produce> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#produce> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Product> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#requireService
+<http://www.semanticweb.org/manufacturingproductionline#requireService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#requireService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Order> .
+<http://www.semanticweb.org/manufacturingproductionline#requireService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Service> .
+<http://www.semanticweb.org/manufacturingproductionline#requireService> <http://www.w3.org/2000/01/rdf-schema#comment> "Maintanince or other service is required by customer to old product" .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#requires
+<http://www.semanticweb.org/manufacturingproductionline#requires> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#requires> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Product> .
+<http://www.semanticweb.org/manufacturingproductionline#requires> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/BFO_0000015> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#useTool
+<http://www.semanticweb.org/manufacturingproductionline#useTool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#useTool> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#useTool> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#useTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+<http://www.semanticweb.org/manufacturingproductionline#useTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Bed> .
+<http://www.semanticweb.org/manufacturingproductionline#useTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Conveyor> .
+<http://www.semanticweb.org/manufacturingproductionline#useTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#Heater> .
+<http://www.semanticweb.org/manufacturingproductionline#useTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#PressureSensor> .
+<http://www.semanticweb.org/manufacturingproductionline#useTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/manufacturingproductionline#VibrationSensor> .
+<http://www.semanticweb.org/manufacturingproductionline#useTool> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa/Actuator> .
+<http://www.semanticweb.org/manufacturingproductionline#useTool> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core/TemperatureSensor> .
+# 
+# http://www.w3.org/2006/time#hasTime
+<http://www.w3.org/2006/time#hasTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2006/time#hasTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.w3.org/2006/time#hasTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Time> .
+# 
+# http://www.w3.org/ns/sosa#madeBySensor
+<http://www.w3.org/ns/sosa#madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/sosa#madeBySensor> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/sosa#madeObservation> .
+<http://www.w3.org/ns/sosa#madeBySensor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa#Observation> .
+<http://www.w3.org/ns/sosa#madeBySensor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa/Sensor> .
+# 
+# http://www.w3.org/ns/sosa#madeObservation
+<http://www.w3.org/ns/sosa#madeObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/sosa#madeObservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3.org/ns/sosa#madeObservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa#Observation> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasCapabilityValue
+<http://www.semanticweb.org/manufacturingproductionline#hasCapabilityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasCapabilityValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasValue> .
+<http://www.semanticweb.org/manufacturingproductionline#hasCapabilityValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#HumanCapability> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasColorName
+<http://www.semanticweb.org/manufacturingproductionline#hasColorName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasColorName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasName> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasCompletionDate
+<http://www.semanticweb.org/manufacturingproductionline#hasCompletionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasCompletionDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasDate> .
+<http://www.semanticweb.org/manufacturingproductionline#hasCompletionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Order> .
+<http://www.semanticweb.org/manufacturingproductionline#hasCompletionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasConveyorID
+<http://www.semanticweb.org/manufacturingproductionline#hasConveyorID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasConveyorID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasID> .
+<http://www.semanticweb.org/manufacturingproductionline#hasConveyorID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#HandlingSystem> .
+<http://www.semanticweb.org/manufacturingproductionline#hasConveyorID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasCustomerID
+<http://www.semanticweb.org/manufacturingproductionline#hasCustomerID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasCustomerID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasID> .
+<http://www.semanticweb.org/manufacturingproductionline#hasCustomerID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://infoneer.txstate.edu/ontology/MSDL_0000682> .
+<http://www.semanticweb.org/manufacturingproductionline#hasCustomerID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasCustomerName
+<http://www.semanticweb.org/manufacturingproductionline#hasCustomerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasCustomerName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasName> .
+<http://www.semanticweb.org/manufacturingproductionline#hasCustomerName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://infoneer.txstate.edu/ontology/MSDL_0000682> .
+<http://www.semanticweb.org/manufacturingproductionline#hasCustomerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasDate
+<http://www.semanticweb.org/manufacturingproductionline#hasDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasDeliveryDate
+<http://www.semanticweb.org/manufacturingproductionline#hasDeliveryDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasDeliveryDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasDate> .
+<http://www.semanticweb.org/manufacturingproductionline#hasDeliveryDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Order> .
+<http://www.semanticweb.org/manufacturingproductionline#hasDeliveryDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasDiameter
+<http://www.semanticweb.org/manufacturingproductionline#hasDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasDiameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://infoneer.txstate.edu/ontology/MSDL_0000035> .
+<http://www.semanticweb.org/manufacturingproductionline#hasDiameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasDirection
+<http://www.semanticweb.org/manufacturingproductionline#hasDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#MotorDirection> .
+<http://www.semanticweb.org/manufacturingproductionline#hasDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasFeederID
+<http://www.semanticweb.org/manufacturingproductionline#hasFeederID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasFeederID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasID> .
+<http://www.semanticweb.org/manufacturingproductionline#hasFeederID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Feeder> .
+<http://www.semanticweb.org/manufacturingproductionline#hasFeederID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasFeederVolume
+<http://www.semanticweb.org/manufacturingproductionline#hasFeederVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasFeederVolume> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Feeder> .
+<http://www.semanticweb.org/manufacturingproductionline#hasFeederVolume> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasFrequencyValue
+<http://www.semanticweb.org/manufacturingproductionline#hasFrequencyValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasFrequencyValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasValue> .
+<http://www.semanticweb.org/manufacturingproductionline#hasFrequencyValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://infoneer.txstate.edu/ontology/MSDL_0000198> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasFunction
+<http://www.semanticweb.org/manufacturingproductionline#hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+<http://www.semanticweb.org/manufacturingproductionline#hasFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasHardnessValue
+<http://www.semanticweb.org/manufacturingproductionline#hasHardnessValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasHardnessValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasValue> .
+<http://www.semanticweb.org/manufacturingproductionline#hasHardnessValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#ToolCapability> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasID
+<http://www.semanticweb.org/manufacturingproductionline#hasID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMState
+<http://www.semanticweb.org/manufacturingproductionline#hasMState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasState> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#MotorState> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMachineID
+<http://www.semanticweb.org/manufacturingproductionline#hasMachineID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMachineID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasID> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMachineID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMachineID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMachineModel
+<http://www.semanticweb.org/manufacturingproductionline#hasMachineModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMachineModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasModel> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMachineModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMachineModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMachineName
+<http://www.semanticweb.org/manufacturingproductionline#hasMachineName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMachineName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasName> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMachineName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMachineName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMaterialName
+<http://www.semanticweb.org/manufacturingproductionline#hasMaterialName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMaterialName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasName> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMaterialName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Material> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasModel
+<http://www.semanticweb.org/manufacturingproductionline#hasModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMotorID
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasID> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasMotorModel
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasModel> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> .
+<http://www.semanticweb.org/manufacturingproductionline#hasMotorModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasName
+<http://www.semanticweb.org/manufacturingproductionline#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasObservedProperty
+<http://www.semanticweb.org/manufacturingproductionline#hasObservedProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasObservedProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa#Observation> .
+<http://www.semanticweb.org/manufacturingproductionline#hasObservedProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasOrderStatus
+<http://www.semanticweb.org/manufacturingproductionline#hasOrderStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasOrderStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Order> .
+<http://www.semanticweb.org/manufacturingproductionline#hasOrderStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasPlacementDate
+<http://www.semanticweb.org/manufacturingproductionline#hasPlacementDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasPlacementDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasDate> .
+<http://www.semanticweb.org/manufacturingproductionline#hasPlacementDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Order> .
+<http://www.semanticweb.org/manufacturingproductionline#hasPlacementDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasPowerValue
+<http://www.semanticweb.org/manufacturingproductionline#hasPowerValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasPowerValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasValue> .
+<http://www.semanticweb.org/manufacturingproductionline#hasPowerValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core/Power> .
+<http://www.semanticweb.org/manufacturingproductionline#hasPowerValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorId
+<http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasID> .
+<http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> .
+<http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorModel
+<http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasSensorModel> .
+<http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> .
+<http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasProcessID
+<http://www.semanticweb.org/manufacturingproductionline#hasProcessID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProcessID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasID> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProcessID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProcessID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasProcessName
+<http://www.semanticweb.org/manufacturingproductionline#hasProcessName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProcessName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasName> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProcessName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProcessName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasProductID
+<http://www.semanticweb.org/manufacturingproductionline#hasProductID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProductID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasID> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProductID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Product> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProductID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasProductName
+<http://www.semanticweb.org/manufacturingproductionline#hasProductName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProductName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasName> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProductName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Product> .
+<http://www.semanticweb.org/manufacturingproductionline#hasProductName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasSensorModel
+<http://www.semanticweb.org/manufacturingproductionline#hasSensorModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasSpeedValue
+<http://www.semanticweb.org/manufacturingproductionline#hasSpeedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasSpeedValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasValue> .
+<http://www.semanticweb.org/manufacturingproductionline#hasSpeedValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://infoneer.txstate.edu/ontology/MSDL_0000110> .
+<http://www.semanticweb.org/manufacturingproductionline#hasSpeedValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasSprayedAmount
+<http://www.semanticweb.org/manufacturingproductionline#hasSprayedAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasSprayedGlueAmount
+<http://www.semanticweb.org/manufacturingproductionline#hasSprayedGlueAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasSprayedGlueAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasStaffID
+<http://www.semanticweb.org/manufacturingproductionline#hasStaffID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasStaffID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasID> .
+<http://www.semanticweb.org/manufacturingproductionline#hasStaffID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Staff> .
+<http://www.semanticweb.org/manufacturingproductionline#hasStaffID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasStaffName
+<http://www.semanticweb.org/manufacturingproductionline#hasStaffName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasStaffName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasName> .
+<http://www.semanticweb.org/manufacturingproductionline#hasStaffName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Staff> .
+<http://www.semanticweb.org/manufacturingproductionline#hasStaffName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasState
+<http://www.semanticweb.org/manufacturingproductionline#hasState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasStrokeTime
+<http://www.semanticweb.org/manufacturingproductionline#hasStrokeTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasStrokeTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://infoneer.txstate.edu/ontology/MSDL_0000038> .
+<http://www.semanticweb.org/manufacturingproductionline#hasStrokeTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorId
+<http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasID> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core/Temperature> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorModel
+<http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasSensorModel> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core/Temperature> .
+<http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasValue
+<http://www.semanticweb.org/manufacturingproductionline#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorId
+<http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasID> .
+<http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Vibration> .
+<http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorModel
+<http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorModel> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasSensorModel> .
+<http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorModel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#Vibration> .
+<http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasViscositySensorID
+<http://www.semanticweb.org/manufacturingproductionline#hasViscositySensorID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasViscositySensorID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasID> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#hasWState
+<http://www.semanticweb.org/manufacturingproductionline#hasWState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#hasWState> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/manufacturingproductionline#hasState> .
+<http://www.semanticweb.org/manufacturingproductionline#hasWState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#WorkStationState> .
+<http://www.semanticweb.org/manufacturingproductionline#hasWState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#isInDirection
+<http://www.semanticweb.org/manufacturingproductionline#isInDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/manufacturingproductionline#isInDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/manufacturingproductionline#MotorDirection> .
+<http://www.semanticweb.org/manufacturingproductionline#isInDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2006/time#hasFinishTime
+<http://www.w3.org/2006/time#hasFinishTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/time#hasFinishTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#Time> .
+<http://www.w3.org/2006/time#hasFinishTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.w3.org/2006/time#hasStartTime
+<http://www.w3.org/2006/time#hasStartTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/time#hasStartTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#Time> .
+<http://www.w3.org/2006/time#hasStartTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.w3.org/ns/sosa#hasSimpleResult
+<http://www.w3.org/ns/sosa#hasSimpleResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/sosa#hasSimpleResult> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa#Observation> .
+<http://www.w3.org/ns/sosa#hasSimpleResult> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor
+<http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://infoneer.txstate.edu/ontology/MSDL_0000035> .
+<http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> <http://www.w3.org/2000/01/rdf-schema#comment> "An engine or motor is a machine designed to convert one form of energy into mechanical energy."@en .
+<http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor> <http://www.w3.org/2000/01/rdf-schema#label> "Motor"@en .
+# 
+# http://infoneer.txstate.edu/ontology/MSDL_0000009
+<http://infoneer.txstate.edu/ontology/MSDL_0000009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://infoneer.txstate.edu/ontology/MSDL_0000009> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity> .
+<http://infoneer.txstate.edu/ontology/MSDL_0000009> <http://www.w3.org/2000/01/rdf-schema#comment> "The ability of an entity to achieve its objectives, specially in relation to its overall mission."@en .
+<http://infoneer.txstate.edu/ontology/MSDL_0000009> <http://www.w3.org/2000/01/rdf-schema#label> "Capability"@en .
+# 
+# http://infoneer.txstate.edu/ontology/MSDL_0000035
+<http://infoneer.txstate.edu/ontology/MSDL_0000035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://infoneer.txstate.edu/ontology/MSDL_0000035> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.oclc.org/NET/ssnx/ssn#Device> .
+<http://infoneer.txstate.edu/ontology/MSDL_0000035> <http://www.w3.org/2000/01/rdf-schema#comment> "A tool is an object used to extend the ability of a machine to its modify features."@en .
+<http://infoneer.txstate.edu/ontology/MSDL_0000035> <http://www.w3.org/2000/01/rdf-schema#label> "Tool"@en .
+# 
+# http://infoneer.txstate.edu/ontology/MSDL_0000038
+<http://infoneer.txstate.edu/ontology/MSDL_0000038> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://infoneer.txstate.edu/ontology/MSDL_0000038> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://infoneer.txstate.edu/ontology/MSDL_0000035> .
+<http://infoneer.txstate.edu/ontology/MSDL_0000038> <http://www.w3.org/2000/01/rdf-schema#label> "Die" .
+# 
+# http://infoneer.txstate.edu/ontology/MSDL_0000110
+<http://infoneer.txstate.edu/ontology/MSDL_0000110> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://infoneer.txstate.edu/ontology/MSDL_0000110> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#ToolCapability> .
+<http://infoneer.txstate.edu/ontology/MSDL_0000110> <http://www.w3.org/2000/01/rdf-schema#comment> "the speed of an object is the magnitude of its velocity"@en .
+<http://infoneer.txstate.edu/ontology/MSDL_0000110> <http://www.w3.org/2000/01/rdf-schema#label> "Speed"@en .
+# 
+# http://infoneer.txstate.edu/ontology/MSDL_0000198
+<http://infoneer.txstate.edu/ontology/MSDL_0000198> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://infoneer.txstate.edu/ontology/MSDL_0000198> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#ToolCapability> .
+<http://infoneer.txstate.edu/ontology/MSDL_0000198> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality, which inheres in a bearer by virtue of the number of the bearer's repetitive actions in a particular time." .
+<http://infoneer.txstate.edu/ontology/MSDL_0000198> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency" .
+# 
+# http://infoneer.txstate.edu/ontology/MSDL_0000682
+<http://infoneer.txstate.edu/ontology/MSDL_0000682> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://infoneer.txstate.edu/ontology/MSDL_0000682> <http://www.w3.org/2000/01/rdf-schema#comment> "A company that plays the role of the consumer of a manufacturing service"@en .
+<http://infoneer.txstate.edu/ontology/MSDL_0000682> <http://www.w3.org/2000/01/rdf-schema#label> "Customer"@en .
+# 
+# http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/2000/01/rdf-schema#label> "Process"@en .
+# 
+# http://purl.oclc.org/NET/ssnx/ssn#Device
+<http://purl.oclc.org/NET/ssnx/ssn#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.oclc.org/NET/ssnx/ssn#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/Container> .
+<http://purl.oclc.org/NET/ssnx/ssn#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A thing made or adapted for a particular purpose, especially a piece of mechanical or electronic equipment."@en .
+<http://purl.oclc.org/NET/ssnx/ssn#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureUnit> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontology-of-units-of-measure.org/resource/om-2/bar> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureUnit> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontology-of-units-of-measure.org/resource/om-2/pascal> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature Unit"@en .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Celsius Temperature Unit" .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureUnit> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontology-of-units-of-measure.org/resource/om-2/bar> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureUnit> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ontology-of-units-of-measure.org/resource/om-2/pascal> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Temperature Unit"@en .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Fahrenheit Temperature Unit" .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa#Observation> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> <http://www.w3.org/2000/01/rdf-schema#comment> "Pressure is the force applied to or distributed over a surface. It is a derived quantity in the International System of Units. Pressure is force divided by area."@en .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure> <http://www.w3.org/2000/01/rdf-schema#label> "Pressure"@en .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/SpeedUnit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/SpeedUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/SpeedUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/SpeedUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Speed Unit" .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/Unit
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called \"metre\"."@en .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unit Of Measurement"@en .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/bar
+<http://www.ontology-of-units-of-measure.org/resource/om-2/bar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/bar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/bar> <http://www.w3.org/2000/01/rdf-schema#label> "Bar Pressure Unit"@en .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/pascal
+<http://www.ontology-of-units-of-measure.org/resource/om-2/pascal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/pascal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontology-of-units-of-measure.org/resource/om-2/Unit> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/pascal> <http://www.w3.org/2000/01/rdf-schema#comment> "The pascal is a unit of pressure and stress defined as newton divided by square metre = joule divided by cubic metre = kilogram divided by metre second squared."@en .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/pascal> <http://www.w3.org/2000/01/rdf-schema#label> "Pascal Pressure Unit"@en .
+# 
+# http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation
+<http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "A Site that is the location of some Artifact."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# http://www.ontologyrepository.com/CommonCoreOntologies/Container
+<http://www.ontologyrepository.com/CommonCoreOntologies/Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologyrepository.com/CommonCoreOntologies/Container> <http://www.w3.org/2000/01/rdf-schema#comment> "A source or supply from which a benefit is produced and that has some utility."@en .
+<http://www.ontologyrepository.com/CommonCoreOntologies/Container> <http://www.w3.org/2000/01/rdf-schema#label> "Resource"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#AssemblingMachine
+<http://www.semanticweb.org/manufacturingproductionline#AssemblingMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#AssemblingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+<http://www.semanticweb.org/manufacturingproductionline#AssemblingMachine> <http://www.w3.org/2000/01/rdf-schema#comment> "A machine combining the semi finished product into finished one."@en .
+<http://www.semanticweb.org/manufacturingproductionline#AssemblingMachine> <http://www.w3.org/2000/01/rdf-schema#label> "AssemblyMachine"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess
+<http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "Assemling process is a series of activities performed by assembly machine."@en .
+<http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess> <http://www.w3.org/2000/01/rdf-schema#label> "AssemblingProcess"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Bed
+<http://www.semanticweb.org/manufacturingproductionline#Bed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Bed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#HandlingSystem> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Cell
+<http://www.semanticweb.org/manufacturingproductionline#Cell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Cell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility> .
+<http://www.semanticweb.org/manufacturingproductionline#Cell> <http://www.w3.org/2000/01/rdf-schema#comment> "Cells are sets of machines that are grouped by the products or parts that they produce. This type of system is used in the cellular manufacturing concept and is distinct from the traditional functional manufacturing system, which groups all similar machines together."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Cell> <http://www.w3.org/2000/01/rdf-schema#label> "Cell"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Component
+<http://www.semanticweb.org/manufacturingproductionline#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Part> .
+<http://www.semanticweb.org/manufacturingproductionline#Component> <http://www.w3.org/2000/01/rdf-schema#label> "Component"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Container
+<http://www.semanticweb.org/manufacturingproductionline#Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Container> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/Container> .
+<http://www.semanticweb.org/manufacturingproductionline#Container> <http://www.w3.org/2000/01/rdf-schema#comment> "A container is any receptacle or enclosure for holding a product used in storage, packaging, and shipping."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Container> <http://www.w3.org/2000/01/rdf-schema#label> "Container"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#ContextualData
+<http://www.semanticweb.org/manufacturingproductionline#ContextualData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#ContextualData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Parameter> .
+<http://www.semanticweb.org/manufacturingproductionline#ContextualData> <http://www.w3.org/2000/01/rdf-schema#comment> "Contextual data is the background information that provides a broader understanding of an event, person, or item."@en .
+<http://www.semanticweb.org/manufacturingproductionline#ContextualData> <http://www.w3.org/2000/01/rdf-schema#label> "Contextual Data"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Conveyor
+<http://www.semanticweb.org/manufacturingproductionline#Conveyor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Conveyor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#HandlingSystem> .
+<http://www.semanticweb.org/manufacturingproductionline#Conveyor> <http://www.w3.org/2000/01/rdf-schema#comment> "A conveyor mechanism that transports material, good or products across a horizontal or inclined plane over a short to medium distance."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Conveyor> <http://www.w3.org/2000/01/rdf-schema#label> "Conveyor"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#ConvyerOperation
+<http://www.semanticweb.org/manufacturingproductionline#ConvyerOperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#ConvyerOperation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Handling> .
+<http://www.semanticweb.org/manufacturingproductionline#ConvyerOperation> <http://www.w3.org/2000/01/rdf-schema#comment> "An operation performed by the conveyer in order to transfer a material or product."@en .
+<http://www.semanticweb.org/manufacturingproductionline#ConvyerOperation> <http://www.w3.org/2000/01/rdf-schema#label> "ConveyorOperation"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Direction
+<http://www.semanticweb.org/manufacturingproductionline#Direction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Direction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity> .
+<http://www.semanticweb.org/manufacturingproductionline#Direction> <http://www.w3.org/2000/01/rdf-schema#label> "Direction"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Feeder
+<http://www.semanticweb.org/manufacturingproductionline#Feeder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Feeder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility> .
+<http://www.semanticweb.org/manufacturingproductionline#Feeder> <http://www.w3.org/2000/01/rdf-schema#comment> "Feeder adds materials, or ingredients to a machine or equipment during the manufacturing process."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Feeder> <http://www.w3.org/2000/01/rdf-schema#label> "Feeder"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#FeederOperation
+<http://www.semanticweb.org/manufacturingproductionline#FeederOperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#FeederOperation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Handling> .
+<http://www.semanticweb.org/manufacturingproductionline#FeederOperation> <http://www.w3.org/2000/01/rdf-schema#comment> "An activity of adding a material to converyor or machine."@en .
+<http://www.semanticweb.org/manufacturingproductionline#FeederOperation> <http://www.w3.org/2000/01/rdf-schema#label> "FeederOperation"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Handling
+<http://www.semanticweb.org/manufacturingproductionline#Handling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Handling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#LogisticProcess> .
+<http://www.semanticweb.org/manufacturingproductionline#Handling> <http://www.w3.org/2000/01/rdf-schema#comment> "Handling involves short-distance movement within the confines of a location."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Handling> <http://www.w3.org/2000/01/rdf-schema#label> "Handling"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#HandlingSystem
+<http://www.semanticweb.org/manufacturingproductionline#HandlingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#HandlingSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://infoneer.txstate.edu/ontology/MSDL_0000035> .
+<http://www.semanticweb.org/manufacturingproductionline#HandlingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A mechanical equipment used for the movement and control of materials, goods and products throughout the process of manufacturing."@en .
+<http://www.semanticweb.org/manufacturingproductionline#HandlingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "HandlingSystem"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Hardness
+<http://www.semanticweb.org/manufacturingproductionline#Hardness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Hardness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#ToolCapability> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Heater
+<http://www.semanticweb.org/manufacturingproductionline#Heater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Heater> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://infoneer.txstate.edu/ontology/MSDL_0000035> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#HumanCapability
+<http://www.semanticweb.org/manufacturingproductionline#HumanCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#HumanCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://infoneer.txstate.edu/ontology/MSDL_0000009> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#HumanOperation
+<http://www.semanticweb.org/manufacturingproductionline#HumanOperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#HumanOperation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/manufacturingproductionline#HumanOperation> <http://www.w3.org/2000/01/rdf-schema#label> "HumanOperation"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Line
+<http://www.semanticweb.org/manufacturingproductionline#Line> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Line> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility> .
+<http://www.semanticweb.org/manufacturingproductionline#Line> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the arrangement of work centers in a way, so that the product is moved sequentially along the line and stops at work centers along the line where an operation is performed."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Line> <http://www.w3.org/2000/01/rdf-schema#label> "Line"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#LogisticProcess
+<http://www.semanticweb.org/manufacturingproductionline#LogisticProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#LogisticProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/manufacturingproductionline#LogisticProcess> <http://www.w3.org/2000/01/rdf-schema#label> "LogisticProcess"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Machine
+<http://www.semanticweb.org/manufacturingproductionline#Machine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Machine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.oclc.org/NET/ssnx/ssn#Device> .
+<http://www.semanticweb.org/manufacturingproductionline#Machine> <http://www.w3.org/2000/01/rdf-schema#comment> "A machine (or mechanical device) is a mechanical structure that uses power to apply forces and control movement to perform an intended action. Machines can be driven by animals and people, by natural forces such as wind and water, and by chemical, thermal, or electrical power, and include a system of mechanisms that shape the actuator input to achieve a specific application of output forces and movement."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Machine> <http://www.w3.org/2000/01/rdf-schema#label> "Machine"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Maintenance
+<http://www.semanticweb.org/manufacturingproductionline#Maintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Maintenance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#HumanOperation> .
+<http://www.semanticweb.org/manufacturingproductionline#Maintenance> <http://www.w3.org/2000/01/rdf-schema#comment> "An operation performed by human to maintain a machine."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Maintenance> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#MaintenanceTechnician
+<http://www.semanticweb.org/manufacturingproductionline#MaintenanceTechnician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#MaintenanceTechnician> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Staff> .
+<http://www.semanticweb.org/manufacturingproductionline#MaintenanceTechnician> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who is responsible for reparing or manintenace of the machine or resources in the factory plant."@en .
+<http://www.semanticweb.org/manufacturingproductionline#MaintenanceTechnician> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Manager
+<http://www.semanticweb.org/manufacturingproductionline#Manager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Manager> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Staff> .
+<http://www.semanticweb.org/manufacturingproductionline#Manager> <http://www.w3.org/2000/01/rdf-schema#label> "Manager"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#ManualProcess
+<http://www.semanticweb.org/manufacturingproductionline#ManualProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#ManualProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#HumanOperation> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility
+<http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/Container> .
+<http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility> <http://www.w3.org/2000/01/rdf-schema#comment> "Any resource contributing in the production of goods in the manufacturing produciton line."@en .
+<http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility> <http://www.w3.org/2000/01/rdf-schema#label> "ManufacturingFacility"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess
+<http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000015> .
+<http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "A series of operations or activities performed by Processing Machine."@en .
+<http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess> <http://www.w3.org/2000/01/rdf-schema#label> "ManufacturingProcess"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Material
+<http://www.semanticweb.org/manufacturingproductionline#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/Container> .
+<http://www.semanticweb.org/manufacturingproductionline#Material> <http://www.w3.org/2000/01/rdf-schema#comment> "The basic material from which the product is made."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#MotorDirection
+<http://www.semanticweb.org/manufacturingproductionline#MotorDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#MotorDirection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Direction> .
+<http://www.semanticweb.org/manufacturingproductionline#MotorDirection> <http://www.w3.org/2000/01/rdf-schema#label> "MotorDirection"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#MotorState
+<http://www.semanticweb.org/manufacturingproductionline#MotorState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#MotorState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/State> .
+<http://www.semanticweb.org/manufacturingproductionline#MotorState> <http://www.w3.org/2000/01/rdf-schema#comment> "The state of the motor can be idle, running or faulty."@en .
+<http://www.semanticweb.org/manufacturingproductionline#MotorState> <http://www.w3.org/2000/01/rdf-schema#label> "MotorState"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#OperatingHours
+<http://www.semanticweb.org/manufacturingproductionline#OperatingHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#OperatingHours> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Parameter> .
+<http://www.semanticweb.org/manufacturingproductionline#OperatingHours> <http://www.w3.org/2000/01/rdf-schema#comment> "Operating hours are scheduled by the production planning. It represents the time during which the manufacturing produciton line is maintained running to manufacture products."@en .
+<http://www.semanticweb.org/manufacturingproductionline#OperatingHours> <http://www.w3.org/2000/01/rdf-schema#label> "OperatingHours"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Operator
+<http://www.semanticweb.org/manufacturingproductionline#Operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Operator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Staff> .
+<http://www.semanticweb.org/manufacturingproductionline#Operator> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who is operates the machinary in the production line."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Operator> <http://www.w3.org/2000/01/rdf-schema#label> "Operator"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Order
+<http://www.semanticweb.org/manufacturingproductionline#Order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Order> <http://www.w3.org/2000/01/rdf-schema#comment> "From a seller's point of view it expresses the intention to sell and is referred to as a sales order. When the purchase order of the buyer and the sales order of the seller agree, the orders become a contract between the buyer and seller."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Order> <http://www.w3.org/2000/01/rdf-schema#label> "Order"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Packing
+<http://www.semanticweb.org/manufacturingproductionline#Packing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Packing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#HumanCapability> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Pallet
+<http://www.semanticweb.org/manufacturingproductionline#Pallet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Pallet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Container> .
+<http://www.semanticweb.org/manufacturingproductionline#Pallet> <http://www.w3.org/2000/01/rdf-schema#comment> "A pallet (also called a skid) is a flat transport structure, which supports goods in a stable fashion while being lifted by a forklift, a pallet jack, a front loader, a jacking device, or an erect crane. A pallet is the structural foundation of a unit load which allows handling and storage efficiencies. Goods or shipping containers are often placed on a pallet secured with strapping, stretch wrap or shrink wrap and shipped."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Pallet> <http://www.w3.org/2000/01/rdf-schema#label> "Pallet"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Parameter
+<http://www.semanticweb.org/manufacturingproductionline#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A parameter is an element of a system that is useful, or critical, when identifying the system, or when evaluating its performance, status, condition, etc."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Part
+<http://www.semanticweb.org/manufacturingproductionline#Part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Part> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Product> .
+<http://www.semanticweb.org/manufacturingproductionline#Part> <http://www.w3.org/2000/01/rdf-schema#comment> "The raw material being processed becomes a part." .
+<http://www.semanticweb.org/manufacturingproductionline#Part> <http://www.w3.org/2000/01/rdf-schema#label> "Part"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity
+<http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Parameter> .
+<http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical quantity is a property of a system that can be quantified by measurement. A physical quantity can be expressed as the combination of a numerical value and a unit."@en .
+<http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "PhysicalQuantity"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#PressureSensor
+<http://www.semanticweb.org/manufacturingproductionline#PressureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#PressureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.semanticweb.org/manufacturingproductionline#PressureSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A  sensor designated to observe the pressure of a device."@en .
+<http://www.semanticweb.org/manufacturingproductionline#PressureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "PressureSensor"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#ProcessingMachine
+<http://www.semanticweb.org/manufacturingproductionline#ProcessingMachine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#ProcessingMachine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Machine> .
+<http://www.semanticweb.org/manufacturingproductionline#ProcessingMachine> <http://www.w3.org/2000/01/rdf-schema#comment> "A machine that perfroms a process  in which a piece of raw material is cut into a desired final shape and size by a controlled material-removal process. The processes that have this common theme, controlled material removal, are today collectively known as subtractive manufacturing, in distinction from processes of controlled material addition, which are known as additive manufacturing."@en .
+<http://www.semanticweb.org/manufacturingproductionline#ProcessingMachine> <http://www.w3.org/2000/01/rdf-schema#label> "ProcessingMachine"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Product
+<http://www.semanticweb.org/manufacturingproductionline#Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/Container> .
+<http://www.semanticweb.org/manufacturingproductionline#Product> <http://www.w3.org/2000/01/rdf-schema#comment> "In marketing, a product is an object or system made available for consumer use; it is anything that can be offered to a market to satisfy the desire or need of a customer. In retailing, products are often referred to as merchandise, and in manufacturing, products are bought as raw materials and then sold as finished goods."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Product> <http://www.w3.org/2000/01/rdf-schema#label> "Product"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Rotation
+<http://www.semanticweb.org/manufacturingproductionline#Rotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Rotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#ToolCapability> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Service
+<http://www.semanticweb.org/manufacturingproductionline#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Service> <http://www.w3.org/2000/01/rdf-schema#comment> "A value delivered to repair the fault or error occured in the purchased product."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Sit-Assessment
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Assessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Assessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Situation> .
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Assessment> <http://www.w3.org/2000/01/rdf-schema#label> "SituationAssesment"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Sit-Classification
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Situation> .
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Classification> <http://www.w3.org/2000/01/rdf-schema#label> "SituationClassification"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Sit-Diagnosis
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Diagnosis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Situation> .
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Diagnosis> <http://www.w3.org/2000/01/rdf-schema#label> "SituationDiagnosis"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Sit-Monitoring
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Monitoring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Monitoring> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Situation> .
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Monitoring> <http://www.w3.org/2000/01/rdf-schema#comment> "To constantly checek the resources during the production line for abnormal behavior."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Monitoring> <http://www.w3.org/2000/01/rdf-schema#label> "SituationMonitoring"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Sit-Prediction
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Prediction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Prediction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#Situation> .
+<http://www.semanticweb.org/manufacturingproductionline#Sit-Prediction> <http://www.w3.org/2000/01/rdf-schema#label> "SituationPrediciton"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Situation
+<http://www.semanticweb.org/manufacturingproductionline#Situation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Situation> <http://www.w3.org/2000/01/rdf-schema#comment> "Situation is the way something is positioned as compared to its surroundings, or the status of the circumstances, or the combination of circumstances at a specific point in time."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Situation> <http://www.w3.org/2000/01/rdf-schema#label> "Situation"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Staff
+<http://www.semanticweb.org/manufacturingproductionline#Staff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Staff> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologyrepository.com/CommonCoreOntologies/Container> .
+<http://www.semanticweb.org/manufacturingproductionline#Staff> <http://www.w3.org/2000/01/rdf-schema#comment> "Person who is responsible for working in a manufacuritng production line or industry."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Staff> <http://www.w3.org/2000/01/rdf-schema#label> "Staff"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#StorageHall
+<http://www.semanticweb.org/manufacturingproductionline#StorageHall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#StorageHall> <http://www.w3.org/2000/01/rdf-schema#comment> "A storeroom in a factory where odds and ends can be stored."@en .
+<http://www.semanticweb.org/manufacturingproductionline#StorageHall> <http://www.w3.org/2000/01/rdf-schema#label> "StorageHall"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Supplier
+<http://www.semanticweb.org/manufacturingproductionline#Supplier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Supplier> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization that provides something needed such as a product."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Supplier> <http://www.w3.org/2000/01/rdf-schema#label> "Supplier"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#ToolCapability
+<http://www.semanticweb.org/manufacturingproductionline#ToolCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#ToolCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://infoneer.txstate.edu/ontology/MSDL_0000009> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Transfer
+<http://www.semanticweb.org/manufacturingproductionline#Transfer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Transfer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#ConvyerOperation> .
+<http://www.semanticweb.org/manufacturingproductionline#Transfer> <http://www.w3.org/2000/01/rdf-schema#comment> "The operation of transfering a material or product from one place to another."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Transfer> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#Vibration
+<http://www.semanticweb.org/manufacturingproductionline#Vibration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#Vibration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa#Observation> .
+<http://www.semanticweb.org/manufacturingproductionline#Vibration> <http://www.w3.org/2000/01/rdf-schema#comment> "Vibration in motorized equipment is the back-and-forth movement, or oscillation, of machines and components, such as drive motors, driven devices (pumps, compressors and so on), and the bearings, shafts, gears, belts and other elements that make up mechanical systems."@en .
+<http://www.semanticweb.org/manufacturingproductionline#Vibration> <http://www.w3.org/2000/01/rdf-schema#label> "Vibration"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#VibrationSensor
+<http://www.semanticweb.org/manufacturingproductionline#VibrationSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#VibrationSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#WorkStation
+<http://www.semanticweb.org/manufacturingproductionline#WorkStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#WorkStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility> .
+<http://www.semanticweb.org/manufacturingproductionline#WorkStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Workstations are small integrated physical groupings of machines."@en .
+<http://www.semanticweb.org/manufacturingproductionline#WorkStation> <http://www.w3.org/2000/01/rdf-schema#label> "Workstation"@en .
+# 
+# http://www.semanticweb.org/manufacturingproductionline#WorkStationState
+<http://www.semanticweb.org/manufacturingproductionline#WorkStationState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/manufacturingproductionline#WorkStationState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/State> .
+<http://www.semanticweb.org/manufacturingproductionline#WorkStationState> <http://www.w3.org/2000/01/rdf-schema#comment> "The state of the workstation can be idle, working or faulty."@en .
+<http://www.semanticweb.org/manufacturingproductionline#WorkStationState> <http://www.w3.org/2000/01/rdf-schema#label> "WorkstationState"@en .
+# 
+# http://www.w3.org/2006/time#Time
+<http://www.w3.org/2006/time#Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#Time> <http://www.w3.org/2000/01/rdf-schema#comment> "Time is the indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past, through the present, into the future. It is a component quantity of various measurements used to sequence events, to compare the duration of events or the intervals between them, and to quantify rates of change of quantities in material reality or in the conscious experience."@en .
+<http://www.w3.org/2006/time#Time> <http://www.w3.org/2000/01/rdf-schema#label> "Time"@en .
+# 
+# http://www.w3.org/ns/sosa#Observation
+<http://www.w3.org/ns/sosa#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity> .
+<http://www.w3.org/ns/sosa#Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "An Observation is a Situation in which a Sensing method has been used to estimate or calculate a value of a Property."@en .
+<http://www.w3.org/ns/sosa#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
+# 
+# http://www.w3.org/ns/sosa/Actuator
+<http://www.w3.org/ns/sosa/Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://infoneer.txstate.edu/ontology/MSDL_0000035> .
+<http://www.w3.org/ns/sosa/Actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world."@en .
+<http://www.w3.org/ns/sosa/Actuator> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator"@en .
+# 
+# http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.oclc.org/NET/ssnx/ssn#Device> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."@en .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
+# 
+# https://saref.etsi.org/core/Power
+<https://saref.etsi.org/core/Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity> .
+<https://saref.etsi.org/core/Power> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property related to some measurements that are characterized by a certain value that is measured in a power unit (such as watt or kilowatt). Further specializations of the saref:Power class can be found in the SAREF4ENER extension, where classes such as PowerMax, PowerMin and PowerExpected are defined."@en .
+<https://saref.etsi.org/core/Power> <http://www.w3.org/2000/01/rdf-schema#label> "Power"@en .
+# 
+# https://saref.etsi.org/core/State
+<https://saref.etsi.org/core/State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/manufacturingproductionline#ContextualData> .
+<https://saref.etsi.org/core/State> <http://www.w3.org/2000/01/rdf-schema#comment> "The state in which a device can be found, e.g, ON/OFF/STANDBY, or ONLINE/OFFLINE, or  running, woking, idle or faulty. We propose here a list of states that are relevant for the purpose of SAREF, but this list can be extended."@en .
+<https://saref.etsi.org/core/State> <http://www.w3.org/2000/01/rdf-schema#label> "State"@en .
+# 
+# https://saref.etsi.org/core/Temperature
+<https://saref.etsi.org/core/Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/Temperature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa#Observation> .
+<https://saref.etsi.org/core/Temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "A saref:Property related to some measurements that are characterized by a certain value that is measured in a temperature unit (degree_Celsius, degree_Fahrenheit, or degree_kelvin)"@en .
+<https://saref.etsi.org/core/Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature"@en .
+# 
+# https://saref.etsi.org/core/TemperatureSensor
+<https://saref.etsi.org/core/TemperatureSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<https://saref.etsi.org/core/TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor that is used for the purpose of sensing a property of type saref:Temperature. A saref:TemperatureSensor is typically used to saref:accomplish saref:Comfort."@en .
+<https://saref.etsi.org/core/TemperatureSensor> <http://www.w3.org/2000/01/rdf-schema#label> "TemperatureSensor"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,2315 @@
+[ {
+  "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An engine or motor is a machine designed to convert one form of energy into mechanical energy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Motor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000035"
+  } ]
+}, {
+  "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The ability of an entity to achieve its objectives, specially in relation to its overall mission."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Capability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity"
+  } ]
+}, {
+  "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000035",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A tool is an object used to extend the ability of a machine to its modify features."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tool"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.oclc.org/NET/ssnx/ssn#Device"
+  } ]
+}, {
+  "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000038",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Die"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000035"
+  } ]
+}, {
+  "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the speed of an object is the magnitude of its velocity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Speed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ToolCapability"
+  } ]
+}, {
+  "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000198",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A quality, which inheres in a bearer by virtue of the number of the bearer's repetitive actions in a particular time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Frequency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ToolCapability"
+  } ]
+}, {
+  "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000682",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A company that plays the role of the consumer of a manufacturing service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Customer"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/BFO_0000015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Process"
+  } ]
+}, {
+  "@id" : "http://purl.oclc.org/NET/ssnx/ssn#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A thing made or adapted for a particular purpose, especially a piece of mechanical or electronic equipment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/Container"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1#isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/CelsiusTemperatureUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Temperature Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Celsius Temperature Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/bar"
+  }, {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/pascal"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/FahrenheitTemperatureUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Temperature Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fahrenheit Temperature Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/bar"
+  }, {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/pascal"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Pressure is the force applied to or distributed over a surface. It is a derived quantity in the International System of Units. Pressure is force divided by area."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#Observation"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/SpeedUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Speed Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A unit of measure is a definite magnitude of a quantity, defined and adopted by convention or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called \"metre\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Unit Of Measurement"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/bar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bar Pressure Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/pascal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The pascal is a unit of pressure and stress defined as newton divided by square metre = joule divided by cubic metre = kilogram divided by metre second squared."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pascal Pressure Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+  } ]
+}, {
+  "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Site that is the location of some Artifact."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Location"
+  } ]
+}, {
+  "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/Container",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A source or supply from which a benefit is produced and that has some utility."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Resource"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#AssemblingMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A machine combining the semi finished product into finished one."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AssemblyMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Assemling process is a series of activities performed by assembly machine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AssemblingProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Bed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#HandlingSystem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Cell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Cells are sets of machines that are grouped by the products or parts that they produce. This type of system is used in the cellular manufacturing concept and is distinct from the traditional functional manufacturing system, which groups all similar machines together."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Part"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Container",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A container is any receptacle or enclosure for holding a product used in storage, packaging, and shipping."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#ContextualData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Contextual data is the background information that provides a broader understanding of an event, person, or item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contextual Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Parameter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Conveyor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A conveyor mechanism that transports material, good or products across a horizontal or inclined plane over a short to medium distance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Conveyor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#HandlingSystem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#ConvyerOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An operation performed by the conveyer in order to transfer a material or product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ConveyorOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Handling"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Direction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Direction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Feeder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Feeder adds materials, or ingredients to a machine or equipment during the manufacturing process."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feeder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#FeederOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An activity of adding a material to converyor or machine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "FeederOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Handling"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Handling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Handling involves short-distance movement within the confines of a location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Handling"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#LogisticProcess"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#HandlingSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A mechanical equipment used for the movement and control of materials, goods and products throughout the process of manufacturing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HandlingSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000035"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Hardness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/Container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000009"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ToolCapability"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Heater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000035"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#HumanCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000009"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#HumanOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HumanOperation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Line",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It is the arrangement of work centers in a way, so that the product is moved sequentially along the line and stops at work centers along the line where an operation is performed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Line"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#LogisticProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "LogisticProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A machine (or mechanical device) is a mechanical structure that uses power to apply forces and control movement to perform an intended action. Machines can be driven by animals and people, by natural forces such as wind and water, and by chemical, thermal, or electrical power, and include a system of mechanisms that shape the actuator input to achieve a specific application of output forces and movement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.oclc.org/NET/ssnx/ssn#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Maintenance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An operation performed by human to maintain a machine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maintenance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#HumanOperation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#MaintenanceTechnician",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person who is responsible for reparing or manintenace of the machine or resources in the factory plant."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maintenance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Manager",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Manager"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManualProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#HumanOperation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Any resource contributing in the production of goods in the manufacturing produciton line."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ManufacturingFacility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A series of operations or activities performed by Processing Machine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ManufacturingProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The basic material from which the product is made."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#MotorDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MotorDirection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Direction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#MotorState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The state of the motor can be idle, running or faulty."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MotorState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/State"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#OperatingHours",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Operating hours are scheduled by the production planning. It represents the time during which the manufacturing produciton line is maintained running to manufacture products."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "OperatingHours"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Parameter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person who is operates the machinary in the production line."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Operator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "From a seller's point of view it expresses the intention to sell and is referred to as a sales order. When the purchase order of the buyer and the sales order of the seller agree, the orders become a contract between the buyer and seller."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Order"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Packing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#HumanCapability"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Pallet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A pallet (also called a skid) is a flat transport structure, which supports goods in a stable fashion while being lifted by a forklift, a pallet jack, a front loader, a jacking device, or an erect crane. A pallet is the structural foundation of a unit load which allows handling and storage efficiencies. Goods or shipping containers are often placed on a pallet secured with strapping, stretch wrap or shrink wrap and shipped."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pallet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A parameter is an element of a system that is useful, or critical, when identifying the system, or when evaluating its performance, status, condition, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Parameter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Part",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The raw material being processed becomes a part."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Part"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A physical quantity is a property of a system that can be quantified by measurement. A physical quantity can be expressed as the combination of a numerical value and a unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PhysicalQuantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Parameter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#PressureSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A  sensor designated to observe the pressure of a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PressureSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#ProcessHasMotorSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000110"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSpeed"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#ProcessingMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A machine that perfroms a process  in which a piece of raw material is cut into a desired final shape and size by a controlled material-removal process. The processes that have this common theme, controlled material removal, are today collectively known as subtractive manufacturing, in distinction from processes of controlled material addition, which are known as additive manufacturing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ProcessingMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "In marketing, a product is an object or system made available for consumer use; it is anything that can be offered to a market to satisfy the desire or need of a customer. In retailing, products are often referred to as merchandise, and in manufacturing, products are bought as raw materials and then sold as finished goods."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Rotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ToolCapability"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A value delivered to repair the fault or error occured in the purchased product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Sit-Assessment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SituationAssesment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Situation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Sit-Classification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SituationClassification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Situation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Sit-Diagnosis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SituationDiagnosis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Situation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Sit-Monitoring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "To constantly checek the resources during the production line for abnormal behavior."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SituationMonitoring"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Situation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Sit-Prediction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SituationPrediciton"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Situation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Situation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Situation is the way something is positioned as compared to its surroundings, or the status of the circumstances, or the combination of circumstances at a specific point in time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Situation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Person who is responsible for working in a manufacuritng production line or industry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Staff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#StorageHall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A storeroom in a factory where odds and ends can be stored."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "StorageHall"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Supplier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person or organization that provides something needed such as a product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Supplier"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#ToolCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000009"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Transfer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The operation of transfering a material or product from one place to another."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Transfer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ConvyerOperation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#Vibration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Vibration in motorized equipment is the back-and-forth movement, or oscillation, of machines and components, such as drive motors, driven devices (pumps, compressors and so on), and the bearings, shafts, gears, belts and other elements that make up mechanical systems."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vibration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#Observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#VibrationSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#WorkStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Workstations are small integrated physical groupings of machines."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Workstation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#WorkStationState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The state of the workstation can be idle, working or faulty."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WorkstationState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/State"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#collectProductFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Supplier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#StorageHall"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#consumesPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Machine and tool both consumes power. They have different consumption value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#AssemblingMachine"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ProcessingMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://saref.etsi.org/core/Power"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Line"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#WorkStation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#deliverProductTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Supplier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000682"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#drives",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Conveyor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#happensIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasCapabilityValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#HumanCapability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasValue"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasColor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasColorName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasName"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasCompletionDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasConveyorID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#HandlingSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasConveyorOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#HandlingSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ConvyerOperation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasCustomerID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000682"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasCustomerName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000682"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasName"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDeliveryDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDevicePressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#AssemblingMachine"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ProcessingMachine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasPressure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDiameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000035"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#MotorDirection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasFeederID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Feeder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasFeederVolume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Feeder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasFrequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.oclc.org/NET/ssnx/ssn#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000198"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasFrequencyValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000198"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasValue"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasHardness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Hardness"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasHardnessValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ToolCapability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasValue"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasHumanCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000009"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasCapability"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasLaserSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000035"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000110"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSpeed"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000682"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#MotorState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasState"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMachine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#WorkStation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMachineID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMachineModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasModel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMachineName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasName"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMaterialName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasName"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMaterialTemp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#Observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotorDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#MotorDirection"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotorID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotorModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasModel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotorSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000110"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSpeed"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotorState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://saref.etsi.org/core/State"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasMotorTemp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#Observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Situation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasObservedProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasOperatingHours",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#WorkStation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#OperatingHours"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000682"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Order"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasOrderStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasPlacementDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasDate"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasPowerValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://saref.etsi.org/core/Power"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasValue"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasPressureSensorModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSensorModel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Situation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProcessID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProcessName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasName"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProcessPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasPressure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProductID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProductName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasName"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.oclc.org/NET/ssnx/ssn#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSensorModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Service"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#isGivenTo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSpeedValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000110"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasValue"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSprayedAmount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSprayedGlueAmount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasStaffID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasStaffName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasName"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasStorageLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#StorageHall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasStrokeTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000038"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSubProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasProcess"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.oclc.org/NET/ssnx/ssn#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#Observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://saref.etsi.org/core/Temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasTemperatureSensorModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://saref.etsi.org/core/Temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSensorModel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasTool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.oclc.org/NET/ssnx/ssn#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Bed"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Conveyor"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Heater"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#PressureSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#VibrationSensor"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/Actuator"
+  }, {
+    "@id" : "https://saref.etsi.org/core/TemperatureSensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasToolCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/Container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000009"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasCapability"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Vibration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasVibrationSensorModel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Vibration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasSensorModel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasViscosity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.oclc.org/NET/ssnx/ssn#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#Observation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasViscositySensorID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasID"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasWState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#WorkStationState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasState"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hasWorkstationState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#WorkStation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://saref.etsi.org/core/State"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#hostSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000035"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#PressureSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#VibrationSensor"
+  }, {
+    "@id" : "https://saref.etsi.org/core/TemperatureSensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isBasedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Supplier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isComposedOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Part"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Material"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isFeedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Conveyor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Feeder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isGivenTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isInDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#MotorDirection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isInLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/Container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isOperatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#operatesProcess"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isPerformedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#performsProcess"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isPerformedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Material"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isPlacedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#StorageHall"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isPlacedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Bed"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isProducedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isRotatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Bed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isTransferedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Conveyor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#isTransferredFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Pallet"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#locatedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontologyrepository.com/CommonCoreOntologies/ArtifactLocation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#operatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#operates"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#operates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingFacility"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#operatesProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#operationPerformedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Maintenance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#performsOperation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#orderHasProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#performsOperation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Staff"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Maintenance"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#performsProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#printsColor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#processConsumesPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://saref.etsi.org/core/Power"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#processHasMotorState",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#MotorState"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#processHasPressureObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/Pressure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#processHasTemperatureObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://saref.etsi.org/core/Temperature"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#processMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Material"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#produce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#requireService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Maintanince or other service is required by customer to old product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Service"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#requires",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/manufacturingproductionline#useTool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#AssemblingProcess"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ManufacturingProcess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://bdi.si.ehu.es/bdi/ontologies/ExtruOnt/components4ExtruOnt#Motor"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Bed"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Conveyor"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#Heater"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#PressureSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#VibrationSensor"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/Actuator"
+  }, {
+    "@id" : "https://saref.etsi.org/core/TemperatureSensor"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Time",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Time is the indefinite continued progress of existence and events that occur in an apparently irreversible succession from the past, through the present, into the future. It is a component quantity of various measurements used to sequence events, to compare the duration of events or the intervals between them, and to quantify rates of change of quantities in material reality or in the conscious experience."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Time"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#hasFinishTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2006/time#Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#hasStartTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2006/time#Time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#hasTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/BFO_0000015"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#Time"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa#Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Observation is a Situation in which a Sensing method has been used to estimate or calculate a value of a Property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa#hasSimpleResult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa#madeBySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#madeObservation"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa#madeObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#Observation"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/Actuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actuator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://infoneer.txstate.edu/ontology/MSDL_0000035"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.oclc.org/NET/ssnx/ssn#Device"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A saref:Property related to some measurements that are characterized by a certain value that is measured in a power unit (such as watt or kilowatt). Further specializations of the saref:Power class can be found in the SAREF4ENER extension, where classes such as PowerMax, PowerMin and PowerExpected are defined."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Power"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#PhysicalQuantity"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/State",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The state in which a device can be found, e.g, ON/OFF/STANDBY, or ONLINE/OFFLINE, or  running, woking, idle or faulty. We propose here a list of states that are relevant for the purpose of SAREF, but this list can be extended."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "State"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/manufacturingproductionline#ContextualData"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A saref:Property related to some measurements that are characterized by a certain value that is measured in a temperature unit (degree_Celsius, degree_Fahrenheit, or degree_kelvin)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa#Observation"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/TemperatureSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A sensor that is used for the purpose of sensing a property of type saref:Temperature. A saref:TemperatureSensor is typically used to saref:accomplish saref:Comfort."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TemperatureSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  } ]
+} ]
